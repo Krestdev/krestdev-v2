@@ -1,7 +1,8 @@
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>Start</div>
+    <div>
+      <span className="font-mono">Instrument sans</span>
+    </div>
   );
 }
