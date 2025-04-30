@@ -1,15 +1,25 @@
-## KrestDev Website
+# 🌐 KrestDev Website
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-The website use is to present KrestDev services and contact informations to gather clients around the world.
+This is the official website for **KrestDev**, a digital agency specializing in custom web and mobile solutions. Built with [Next.js](https://nextjs.org), this project showcases our services, past work, and provides a direct contact point for clients across the globe.
 
-## Getting Started
+---
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Next.js 14** – Framework for building modern web apps
+- **TypeScript** – Type-safe development
+- **Tailwind CSS** – Utility-first styling
+- **shadcn/ui** – Accessible and customizable UI components
+- **next-intl** – Internationalization and localization
+
+---
+
+## 🧑‍💻 Getting Started
+
+To run the project locally:
 
 ```bash
 npm install
-
 npm run dev
 # or
 yarn dev
@@ -18,23 +28,35 @@ pnpm dev
 # or
 bun dev
 ```
+Once the dev server is running, open [http://localhost:3000](http://localhost:3000) to view the site.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can start editing the page by modifying
+```bash
+cd app/page.tsx
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌍 Internationalization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses **next-intl** for managing multiple languages. You’ll find translation files inside the `/messages` directory.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Here are some resources to help you get familiar with the tech stack:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Tailwind CSS Docs](https://tailwindcss.com/docs/styling-with-utility-classes) – Get up to speed with utility-first CSS.
+- [Shadcn/ui Docs](https://ui.shadcn.com/docs) – Explore ready-made UI components.
+- [Next-intl Docs](https://next-intl.dev/docs/getting-started/app-router/without-i18n-routing) - Manage multilingual support effectively.
 
 ## Working on this project
 
-Make sure to create your branch on both local and online. Changes will be merged later on. Have a nice day !
+Before contributing:
+1. Create your own branch from *main*:
+```bash
+git checkout -b your-feature-name
+```
+2. Make your changes and commit regularly.
+3. Open a pull request to merge your branch into *main*.
+[!WARNING] **Do not push directly to main** – all contributions must go through pull requests.
 
+Have a great time building with us! 💻🚀
