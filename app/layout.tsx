@@ -3,6 +3,8 @@ import { Instrument_Serif, Inter } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/layout";
 import { config } from "@/data/config";
+import {NextIntlClientProvider} from 'next-intl';
+import {getLocale} from 'next-intl/server';
 
 const primaryFont = Inter({
   variable: "--font-inter",
@@ -43,19 +45,22 @@ export const metadata: Metadata = {
   }
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
   return (
-    <html lang="fr">
+    <html lang={locale}>
       <body
         className={`${primaryFont.variable} ${secondaryFont.variable} antialiased`}
       >
-        <Layout>
-          {children}
-        </Layout>
+        <NextIntlClientProvider locale={locale}>
+          <Layout>
+            {children}
+          </Layout>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
