@@ -1,5 +1,104 @@
 {
-    "HomePage": {
-      "title": "Bonjour le Monde!"
+  "HomePage": {
+    "title": "Bonjour le Monde!"
+  },
+  "Navbar": {
+    "services": "Services",
+    "about": "À propos",
+    "tarif": "Tarification",
+    "contact": "Contact",
+    "portofolio": "Consulter notre Portfolio"
+  },
+  "Hero": {
+    "title1": "Transformez vos idées en ",
+    "title2": "Solutions digitales puissantes.",
+    "description": "Agence spécialisée en développement web, design sur mesure et stratégie marketing pour propulser votre entreprise",
+    "services": "Découvrez nos services",
+    "contact": "Contactez-nous"
+  },
+  "About": {
+    "description": "Chez KrestDev, nous transformons vos ambitions en succès concrets. De la première idée au lancement final, notre équipe créative et technique met son expertise au service de votre croissance. Innovation, performance et impact sont au cœur de tout ce que nous réalisons.",
+    "mission": "Notre mission",
+    "missionDescription": "Transformer vos idées en solutions digitales performantes et durables. Nous vous accompagnons à chaque étape, de la stratégie à la mise en œuvre, pour créer un impact réel",
+    "expertise": "Notre expertise",
+    "expertiseDescription": "De la création de site web et d’applications à la mise en place de stratégies digitale sur-mesure, notre équipe d’experts allie créativité et technologie pour répondre à vos besoins les plus ambitieux.",
+    "approche": "Notre approche",
+    "approachDescription": "Chez KrestDev, chaque collaboration repose sur l’écoute active et la co-construction. Nous croyons qu’un dialogue constant est la clé pour dépasser vos attentes et assurer votre satisfaction.",
+    "valeurs": "Nos valeurs",
+    "valuesDescription": "Nous croyons que chaque projet est une opportunité de repousser les limites du digital. Nous cultivons l’innovation, poursuivons l’excellence et plaçons la relation humaine au cœur de nos réalisations."
+  },
+  "Statistics": {
+    "title1": "Des solutions qui transforment",
+    "title2": "vos ambitions en réussites",
+    "description": "Chez KrestDev, nous combinons expertise technique et créativité pour livrer des solutions sur-mesure. Chaque projet est l'occasion de repousser les limites de l'innovation digitale.",
+    "livre": "Projets livrés",
+    "clients": "Satisfaction clients",
+    "accompagne": "Clients accompagnés"
+  },
+  "Domain": {
+    "title": "Nos domaines d'expertise",
+    "description": "Nous sommes spécialisés dans le développement web, le design UI/UX, le marketing digital et la stratégie de marque. Notre équipe d'experts est prête à transformer vos idées",
+    "web": "Sites Web Haute Performance",
+    "webDescription": "Développement de sites vitrines, e-commerce et applications web modernes et performants.",
+    "design": "UI/UX Design",
+    "designDescription": "Interfaces intuitives et expériences utilisateur mémorables pour capter votre audience.",
+    "marketing": "Marketing Digital",
+    "marketingDescription": "Attirez, engagez et fidélisez grâce à des campagnes digitales stratégiques et optimisées.",
+    "mobileWeb": "Applications Web & Mobiles Sur-Mesure",
+    "mobileWebDescription": "Notre équipe transforme vos idées en outils digitaux puissants, pensés pour accompagner votre croissance et marquer votre différence.",
+    "branding": "Branding & Identité Visuelle",
+    "brandingDescription": "Créez une marque forte et mémorable avec un design qui inspire confiance et fidélité.",
+    "reseaux": "Réseaux & Infrastructures",
+    "reseauxDescription": "Mise en place et sécurisation des réseaux d'entreprise"
+  },
+  "Realisation": {
+    "title": "Nos réalisations phares",
+    "description": "Découvrez quelques projets récents menés avec passion pour nos clients dans divers secteurs.",
+    "seeMore": "Voir tous nos projets"
+  },
+  "Temoignages": {
+    "title": "Témoignage clients",
+    "description": "Des collaborations qui parlent d’elles-mêmes"
+  },
+  "Equipe": {
+    "title": "L’équipe KrestDev",
+    "description": "Une équipe passionnée réunissant designers, développeurs, stratèges et marketeurs pour faire rayonner votre projet.",
+    "chef": "Chef de projet",
+    "backend": "Développeur Backend",
+    "frontend": "Développeur Frontend"
+  },
+  "FAQ": {
+    "title": "Questions Fréquemment Posées",
+    "Question1": {
+      "title": "Quels délais pour livrer un site web ?",
+      "content": "Le délai de livraison d’un site web dépend de sa complexité. En général, nous livrons un site vitrine en 2 à 4 semaines et un site e-commerce en 4 à 8 semaines."
+    },
+    "Question2": {
+      "title": "Comment se passe le processus de création ?",
+      "content": "Nous commençons par une phase de découverte pour comprendre vos besoins. Ensuite, nous passons à la conception, au développement et enfin aux tests avant la mise en ligne."
+    },
+    "Question3": {
+      "title": "Proposez-vous des forfaits de maintenance ?",
+      "content": "Oui, nous proposons plusieurs forfaits de maintenance adaptés à vos besoins. Cela inclut la mise à jour du contenu, la sécurité et le support technique."
+    },
+    "Question4": {
+      "title": "Est-ce que vous accompagnez après la mise en ligne ?",
+      "content": "Absolument ! Nous offrons un suivi post-lancement pour nous assurer que tout fonctionne comme prévu et pour apporter des ajustements si nécessaire."
+    },
+    "Question5": {
+      "title": "Travaillez-vous avec des entreprises à l'international ?",
+      "content": "Oui, nous avons des clients dans plusieurs pays. Nous sommes habitués à travailler à distance et à gérer les différences de fuseaux horaires."
+    },
+    "Question6": {
+      "title": "Comment obtenir un devis pour mon projet ?",
+      "content": "Pour obtenir un devis, il vous suffit de nous contacter via notre formulaire en ligne ou par email. Nous discuterons de votre projet et vous fournirons une estimation."
     }
+  },
+  "Footer": {
+    "description": "Votre Partenaire Digital Stratégique. Basés à Douala, nous transformons vos ambitions digitales en réussites mesurables.",
+    "email": "Email",
+    "phone": "Numéro de Téléphone",
+    "address": "Adresse",
+    "copyright": "© 2025 Copyright KrestDev - Propulsé par KrestDev "
   }
+}

@@ -1,4 +1,5 @@
 import { Config, Contact } from "@/types/config";
+import { useTranslations } from "next-intl";
 
 export const config:Config = {
     name: "KrestDev",
