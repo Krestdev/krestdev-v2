@@ -128,13 +128,46 @@
   p {
     @apply text-paragraph;
   }
-  h1, h2 {
-    @apply leading-[120%] tracking-[-0.03em] font-semibold;
+  h1, h2, h3 {
+    @apply leading-[120%] tracking-[-3%] font-semibold text-center;
   }
   h1 {
-    @apply text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[60px];
+    @apply text-[32px] sm:text-[40px] md:text-[48px] xl:text-[60px];
+  }
+  h2 {
+    @apply text-[30px] sm:text-[36px] md:text-[40px] xl:text-[48px];
+  }
+  h3 {
+    @apply text-[20px] md:text-[24px] lg:text-[28px];
+  }
+  .subtitle {
+    @apply text-[14px] leading-[100%] tracking-[0%] text-[#606060]
   }
   .containerBloc {
-    @apply container py-[96px] px-[28px]
+    @apply container py-[96px] max-w-[1280px] w-full
+  }
+}
+
+@layer components {
+  .v-space{
+    @apply py-10 sm:py-12 lg:py-16 xl:py-20;
+  }
+  .component{
+    @apply mx-auto px-7 w-full max-w-screen-xl;
+  }
+  .gradient-text {
+    @apply text-sky-300 italic; /* inline-block text-transparent bg-clip-text bg-gradient-to-t from-primary to-sky-300 */
+  }
+  .flexing {
+    @apply flex flex-col gap-6 sm:gap-8 lg:gap-12 items-center justify-center;
+  }
+  .before-title {
+    @apply uppercase text-primary tracking-widest;
+  }
+  .service-title {
+    @apply text-[20px] sm:text-[26px] lg:text-[30px] font-medium uppercase tracking-tighter;
+  }
+  .button-icon {
+    @apply size-8 rounded flex items-center justify-center bg-slate-950 text-white transition-colors duration-300 ease-in-out;
   }
 }

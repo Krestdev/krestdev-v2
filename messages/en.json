@@ -36,7 +36,8 @@
     "accompagne": "Clients accompanied"
   },
   "Domain": {
-    "title": "Our areas of expertise",
+    "title1": "Our areas",
+    "title2": " of expertise",
     "description": "We specialize in web development, UI/UX design, digital marketing and brand strategy. Our team of experts is ready to transform your ideas",
     "web": "High Performance Websites",
     "webDescription": "Development of showcase websites, e-commerce and modern, high-performance web applications.",
@@ -52,16 +53,19 @@
     "reseauxDescription": "Setup and securing of corporate networks"
   },
   "Realisation": {
-    "title": "Our flagship projects",
+    "title1": "Our flagship",
+    "title2": "projects",
     "description": "Discover some recent projects carried out with passion for our clients in various sectors.",
     "seeMore": "View all our projects"
   },
   "Temoignages": {
-    "title": "Client testimonials",
+    "title1": "Client",
+    "title2": " testimonials",
     "description": "Collaborations that speak for themselves"
   },
   "Equipe": {
-    "title": "The KrestDev team",
+    "title1": "The KrestDev",
+    "title2": " team",
     "description": "A passionate team bringing together designers, developers, strategists and marketers to make your project shine.",
     "chef": "Project Manager",
     "backend": "Backend Developer",
@@ -71,27 +75,23 @@
     "title": "Frequently Asked Questions",
     "Question1": {
       "title": "What are the delivery times for a website?",
-      "content": "The delivery time for a website depends on its complexity. Generally, we deliver a showcase site in 2 to 4 weeks and an e-commerce site in 4 to 8 weeks."
+      "content": "The delivery time for a website depends on its complexity. Typically, we deliver a showcase website within 2 to 4 weeks and an e-commerce site within 4 to 8 weeks."
     },
     "Question2": {
-      "title": "How does the creation process work?",
-      "content": "We start with a discovery phase to understand your needs. Then we move on to design, development and finally testing before going live."
+      "title": "How does a project start with you?",
+      "content": "We start with a discovery phase to understand your needs. Then we move on to design, development, and finally testing before going live."
     },
     "Question3": {
       "title": "Do you offer maintenance packages?",
-      "content": "Yes, we offer several maintenance packages tailored to your needs. This includes content updates, security and technical support."
+      "content": "Yes, we offer several maintenance packages tailored to your needs. This includes content updates, security, and technical support."
     },
     "Question4": {
-      "title": "Do you provide support after going live?",
-      "content": "Absolutely! We offer post-launch follow-up to ensure everything works as planned and to make adjustments if necessary."
+      "title": "Can I upgrade my project after delivery?",
+      "content": "Absolutely! We offer post-launch support to ensure everything works as expected and to make adjustments if needed."
     },
     "Question5": {
       "title": "Do you work with international companies?",
       "content": "Yes, we have clients in several countries. We are used to working remotely and managing time zone differences."
-    },
-    "Question6": {
-      "title": "How can I get a quote for my project?",
-      "content": "To get a quote, simply contact us via our online form or by email. We will discuss your project and provide you with an estimate."
     }
   },
   "Footer": {

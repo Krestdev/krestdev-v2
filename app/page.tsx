@@ -1,11 +1,21 @@
+import Boost from '@/components/Home/Contact/boost';
+import GridDomain from '@/components/Home/Domain/GridDomain';
+import Equipe from '@/components/Home/Equipe/Equipe';
+import FAQ from '@/components/Home/FAQ/FAQComp';
 import Hero from '@/components/Home/Hero';
+import Realisation from '@/components/Home/Realisation/Realisation';
 import { ScrollCarousel } from '@/components/Home/Scroll/ScrollCarousel';
 import Section from '@/components/Home/Scroll/Section';
+import Statistique from '@/components/Home/Scroll/Statistique';
+import Temoignage from '@/components/Home/Temoignage/Temoignage';
+import { HorizontalScrollCarousel } from '@/components/horizontal-scroll';
 import LocaleSwitcher from '@/components/locale-switcher';
+import { TextReveal } from '@/components/ui/text-reveal';
 import { useTranslations } from 'next-intl';
 
 export default function Home() {
-  const t = useTranslations('HomePage');
+  const t = useTranslations('About');
+  const t1 = useTranslations('HomePage');
   const about = [
     {
       image: "/images/mission.png",
@@ -30,28 +40,25 @@ export default function Home() {
   ]
 
   return (
-    <div>
+    <div className='flex flex-col items-center justify-center overflow-clip'>
       <Hero />
-      <div className='py-[96px]'>
-      <ScrollCarousel
-        containerHeight="750vh" // Diminue pour éviter trop de vide
-        stickyHeight="1000px"    // La hauteur visible du carousel pendant le scroll
-      >
-        {
-          about.map((x, i) => (
+      <div className='containerBloc flex flex-col items-center justify-center'>
+        <TextReveal text={t("description")} className='flex w-full justify-center pt-40' />
+        <HorizontalScrollCarousel>
+          {about.map((item, i) => (
             <span key={i}>
-              <Section title={x.title} description={x.content} image={x.image} />
+              <Section title={item.title} description={item.content} image={item.image} />
             </span>
-          ))
-        }
-      </ScrollCarousel>
+          ))}
+        </HorizontalScrollCarousel>
+        <Statistique />
+        <GridDomain />
+        <Realisation />
+        <Temoignage />
       </div>
-      <h1>{t("title")}</h1>
-      <LocaleSwitcher />
-      <span className="font-mono">Instrument sans</span>
-      <p className="text-primary">primary text</p>
-      <div className="my-3 ml-2 w-sm h-10 flex items-center justify-center border border-gray-border">border gray</div>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ea explicabo sed eligendi, reiciendis odio possimus non aspernatur hic, doloribus libero ipsam obcaecati amet, nobis necessitatibus quam saepe eius mollitia?</p>
+      <Equipe />
+      <FAQ />
+      <Boost />
     </div>
   );
 }

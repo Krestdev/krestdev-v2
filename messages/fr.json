@@ -36,7 +36,8 @@
     "accompagne": "Clients accompagnés"
   },
   "Domain": {
-    "title": "Nos domaines d'expertise",
+    "title1": "Nos domaines",
+    "title2": " d'expertise",
     "description": "Nous sommes spécialisés dans le développement web, le design UI/UX, le marketing digital et la stratégie de marque. Notre équipe d'experts est prête à transformer vos idées",
     "web": "Sites Web Haute Performance",
     "webDescription": "Développement de sites vitrines, e-commerce et applications web modernes et performants.",
@@ -52,16 +53,19 @@
     "reseauxDescription": "Mise en place et sécurisation des réseaux d'entreprise"
   },
   "Realisation": {
-    "title": "Nos réalisations phares",
+    "title1": "Nos réalisations",
+    "title2": "phares",
     "description": "Découvrez quelques projets récents menés avec passion pour nos clients dans divers secteurs.",
     "seeMore": "Voir tous nos projets"
   },
   "Temoignages": {
-    "title": "Témoignage clients",
+    "title1": "Témoignage",
+    "title2": "clients",
     "description": "Des collaborations qui parlent d’elles-mêmes"
   },
   "Equipe": {
-    "title": "L’équipe KrestDev",
+    "title1": "L’équipe",
+    "title2": "KrestDev",
     "description": "Une équipe passionnée réunissant designers, développeurs, stratèges et marketeurs pour faire rayonner votre projet.",
     "chef": "Chef de projet",
     "backend": "Développeur Backend",
@@ -74,7 +78,7 @@
       "content": "Le délai de livraison d’un site web dépend de sa complexité. En général, nous livrons un site vitrine en 2 à 4 semaines et un site e-commerce en 4 à 8 semaines."
     },
     "Question2": {
-      "title": "Comment se passe le processus de création ?",
+      "title": "Comment démarre un projet avec vous ?",
       "content": "Nous commençons par une phase de découverte pour comprendre vos besoins. Ensuite, nous passons à la conception, au développement et enfin aux tests avant la mise en ligne."
     },
     "Question3": {
@@ -82,17 +86,19 @@
       "content": "Oui, nous proposons plusieurs forfaits de maintenance adaptés à vos besoins. Cela inclut la mise à jour du contenu, la sécurité et le support technique."
     },
     "Question4": {
-      "title": "Est-ce que vous accompagnez après la mise en ligne ?",
+      "title": "Puis-je faire évoluer mon projet après livraison ?",
       "content": "Absolument ! Nous offrons un suivi post-lancement pour nous assurer que tout fonctionne comme prévu et pour apporter des ajustements si nécessaire."
     },
     "Question5": {
       "title": "Travaillez-vous avec des entreprises à l'international ?",
       "content": "Oui, nous avons des clients dans plusieurs pays. Nous sommes habitués à travailler à distance et à gérer les différences de fuseaux horaires."
-    },
-    "Question6": {
-      "title": "Comment obtenir un devis pour mon projet ?",
-      "content": "Pour obtenir un devis, il vous suffit de nous contacter via notre formulaire en ligne ou par email. Nous discuterons de votre projet et vous fournirons une estimation."
     }
+  },
+  "Boost": {
+    "title1": "Envie de booster votre",
+    "title2": "présence digitale ?",
+    "description": "Chaque solution que nous créons est pensée pour booster votre visibilité et votre performance.",
+    "button": "Nous Contacter"
   },
   "Footer": {
     "description": "Votre Partenaire Digital Stratégique. Basés à Douala, nous transformons vos ambitions digitales en réussites mesurables.",

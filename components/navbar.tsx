@@ -6,6 +6,7 @@ import Link from 'next/link';
 import React from 'react'
 import { Button } from './ui/button';
 import { useRouter } from 'next/navigation';
+import LocaleSwitcher from './locale-switcher';
 
 function Navbar() {
   const t = useTranslations('Navbar');
@@ -22,7 +23,10 @@ function Navbar() {
           <Link href={""} className='hover:underline font-medium' >{t("tarif")}</Link>
           <Link href={""} className='hover:underline font-medium' >{t("contact")}</Link>
         </span>
-        <Button>{t("portofolio")}</Button>
+        <div className='flex items-center gap-3'>
+          <LocaleSwitcher />
+          <Button>{t("portofolio")}</Button>
+        </div>
       </div>
     </div>
   )

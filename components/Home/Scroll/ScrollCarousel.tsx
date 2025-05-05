@@ -71,19 +71,17 @@ export function ScrollCarousel({
         style={{ height: stickyHeight }}
       >
         {/* Conteneur avec overflow caché */}
-        <div ref={containerRef} className="h-fit w-full flex flex-col items-center gap-[60px] overflow-hidden">
+        <div ref={containerRef} className="h-fit w-full flex flex-col gap-[60px] overflow-hidden">
           {/* Élément animé qui contient les enfants */}
 
-          <p className='w-[844px] text-[28px] text-black'>{t("description")}</p>
+          <p className='text-[28px] text-black w-[1384px] pl-[540px]'>{t("description")}</p>
           <motion.div
             ref={innerRef}
             style={{ x }} // Animation horizontale contrôlée par le scroll
-            className="flex gap-8 px-4 will-change-transform" // will-change pour optimisation
+            className="flex gap-8 px-4 will-change-transform pl-[540px]" // will-change pour optimisation
           >
             {children} {/* Contenu du carousel */}
           </motion.div>
-          
-          <Statistique /> {/* Composant de statistiques */}
         </div>
       </div>
     </section>
