@@ -21,9 +21,25 @@ interface Props {
 
 export function AutoScroll({ item }: Props) {
   const [emblaRef, setEmblaRef] = React.useState<any>(null)
+  const [isMobile, setIsMobile] = React.useState(false)
 
   React.useEffect(() => {
-    if (!emblaRef) return
+    // Vérifier si on est sur mobile au montage
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768) // 768px est une valeur courante pour mobile/tablette
+    }
+    
+    // Vérifier au montage
+    checkIfMobile()
+    
+    // Écouter les changements de taille
+    window.addEventListener('resize', checkIfMobile)
+    
+    return () => window.removeEventListener('resize', checkIfMobile)
+  }, [])
+
+  React.useEffect(() => {
+    if (!emblaRef || isMobile) return
 
     const interval = setInterval(() => {
       if (emblaRef.canScrollNext()) {
@@ -34,7 +50,24 @@ export function AutoScroll({ item }: Props) {
     }, 3000)
 
     return () => clearInterval(interval)
-  }, [emblaRef])
+  }, [emblaRef, isMobile])
+
+  if (isMobile) {
+    return (
+      <div className="flex flex-col w-fit">
+        {item.map((x, i) => (
+          <div key={i} className="w-fit">
+            <TemoignageComp
+              image={x.image}
+              name={x.name}
+              description={x.description}
+              titre={x.titre}
+            />
+          </div>
+        ))}
+      </div>
+    )
+  }
 
   return (
     <Carousel

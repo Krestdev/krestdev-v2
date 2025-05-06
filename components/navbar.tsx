@@ -7,6 +7,7 @@ import React from 'react'
 import { Button } from './ui/button';
 import { useRouter } from 'next/navigation';
 import LocaleSwitcher from './locale-switcher';
+import { LucideMenu } from 'lucide-react';
 
 function Navbar() {
   const t = useTranslations('Navbar');
@@ -14,10 +15,11 @@ function Navbar() {
   return (
     <div className='w-full h-[70px] flex justify-center bg-black '>
       <div className='flex flex-row items-center justify-between max-w-[1280px] w-full h-[70px] px-7'>
-        <button className='cursor-pointer' onClick={() => router.push('/')}>
-          <Image src={'/images/logo.png'} alt={'Logo'} width={161} height={32} />
-        </button>
-        <span className='text-white flex flex-row items-center gap-4'>
+        <div className='flex items-center gap-2'>
+          <LucideMenu className='flex md:hidden gap-2 px-2 size-10 text-white' />
+          <img src={'/images/logo.png'} alt={'Logo'} className='h-[32px] w-auto object-cover flex gap-2' />
+        </div>
+        <span className='text-white hidden md:flex flex-row items-center gap-4'>
           <Link href={""} className='hover:underline font-medium' >{t("services")}</Link>
           <Link href={""} className='hover:underline font-medium' >{t("about")}</Link>
           <Link href={""} className='hover:underline font-medium' >{t("tarif")}</Link>
@@ -25,7 +27,7 @@ function Navbar() {
         </span>
         <div className='flex items-center gap-3'>
           <LocaleSwitcher />
-          <Button>{t("portofolio")}</Button>
+          <Button className='h-10 md:h-[60px] hidden sm:flex'>{t("portofolio")}</Button>
         </div>
       </div>
     </div>

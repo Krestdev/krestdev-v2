@@ -21,7 +21,7 @@ export const TextReveal: FC<TextRevealProps> = ({ text, className, textClassName
 
   return (
     <div ref={targetRef} className={className}>
-      <div className="flex items-center relative">
+      <div className="flex items-center relative px-7 md:px-0">
         <p
           className={"flex flex-wrap font-medium text-slate-950/20 dark:text-white/20 md:py-8 md:pl-[60px] text-[28px] max-w-[844px] leading-[100%] tracking-[-3%]"}
         >

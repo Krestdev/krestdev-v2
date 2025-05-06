@@ -21,7 +21,7 @@ const Nombre = ({ nombre, uni, title }: NombreProps) => {
     }, [])
 
     return (
-        <div>
+        <div className='flex flex-col items-center lg:items-start'>
             <p>{title}</p>
             <div className='flex items-center'>
                 <motion.h1 className='font-semibold text-[80px] text-black '>{rounded}</motion.h1>

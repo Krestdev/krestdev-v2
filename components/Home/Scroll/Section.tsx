@@ -8,7 +8,7 @@ interface Section {
 
 const Section = ({title, description, image}: Section) => {
   return (
-    <div className='flex flex-col gap-6 px-7 py-8 border border-[#d9d9d9] w-[408px]'>
+    <div className='flex flex-col gap-6 px-7 py-8 border border-[#d9d9d9] w-auto sm:w-[408px]'>
         <img src={image} alt={title} className='w-16 h-16 object-cover' />
         <div className='flex flex-col gap-2'>
             <h3>{title}</h3>

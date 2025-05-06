@@ -42,8 +42,8 @@ export default function Home() {
   return (
     <div className='flex flex-col items-center justify-center overflow-clip'>
       <Hero />
-      <div className='containerBloc flex flex-col items-center justify-center'>
-        <TextReveal text={t("description")} className='flex w-full justify-center pt-40' />
+      <div className='containerBloc py-0 lg:py-[96px] flex flex-col items-center justify-center'>
+        <TextReveal text={t("description")} className='flex w-full justify-center' />
         <HorizontalScrollCarousel>
           {about.map((item, i) => (
             <span key={i}>

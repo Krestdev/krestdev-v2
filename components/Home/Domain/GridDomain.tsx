@@ -45,19 +45,19 @@ const GridDomain = () => {
         },
     ]
     return (
-        <div className='flex flex-col items-center bg-gradient-to-b from-[#000000] via-[#061B7D] to-[#013B7D] w-screen'>
-            <div className='flex flex-col gap-10 containerBloc'>
-                <div className=' flex flex-row justify-between px-7'>
+        <div className='flex flex-col items-center bg-gradient-to-b from-[#000000] via-[#061B7D] to-[#013B7D] w-screen px-7 sm:px-0'>
+            <div className='flex flex-col items-center gap-10 containerBloc'>
+                <div className='flex flex-col items-center lg:items-start lg:flex-row justify-between max-w-[1280px] w-full px-7'>
                     <div className='max-w-[489px]'>
                         <h2 className='text-white text-start'>
                             {t("title1")} <span className='font-mono font-normal'>{` ${t("title2")}`}</span>
                         </h2>
                     </div>
-                    <p className='text-[#CACACA] text-[14px] text-start max-w-[408px]'>
+                    <p className='text-[#CACACA] text-[14px] text-start lg:max-w-[408px] w-full'>
                         {"Chaque solution que nous créons est pensée pour booster votre visibilité et votre performance."}
                     </p>
                 </div>
-                <span className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
+                <span className='grid grid-cols-1 lg:grid-cols-3 gap-7'>
                     {
                         domain.map((x, i) => {
                             return (

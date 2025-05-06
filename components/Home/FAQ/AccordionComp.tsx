@@ -16,7 +16,7 @@ interface ItemsProps {
 
 export function AccordionComp({ items }: ItemsProps) {
     return (
-        <Accordion type="single" collapsible className="max-w-[1280px] w-full flex flex-col gap-9 items-center justify-center">
+        <Accordion type="single" collapsible className="max-w-[1280px] px-7 w-full flex flex-col gap-9 items-center justify-center">
             {
                 items.map((item, index) => (
                     <AccordionItem key={index} value={`item-${index}`} className="max-w-[1024px] w-full">

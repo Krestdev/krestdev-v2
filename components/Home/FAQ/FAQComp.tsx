@@ -28,7 +28,7 @@ const FAQ = () => {
     ]
 
     return (
-        <div className="w-full py-[96px] flex flex-col gap-10 items-center justify-center">
+        <div className="w-full py-[60px] md:py-[96px] flex flex-col gap-10 items-center justify-center">
             <h2>{"FAQ(Foire aux Question)"}</h2>
             <AccordionComp items={items} />
         </div>

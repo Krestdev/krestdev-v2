@@ -22,15 +22,15 @@ export const HorizontalScrollCarousel = ({children}:{children:React.ReactNode}) 
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  const x = useSpring(useTransform(scrollYProgress, [0, 1], isMobile ? ["0%", "0%"] : ["0%", "-50%"]), {
+  const x = useSpring(useTransform(scrollYProgress, [0, 1], isMobile ? ["0%", "0%"] : ["0%", "-57%"]), {
     stiffness: 200,
     damping: 50,
     restDelta:0.001
   });
 
   return (
-    <section ref={targetRef} className="static sm:relative min-h-fit sm:h-[400vh] overflow-x-clip  pl-[540px]">
-      <motion.div className="sticky top-[20vh] flex items-start overflow-x-visible max-w-screen-xl mx-auto" initial={{height: "fit-content"}} animate={{height: "fit-content"}} exit={{height: "auto", transition: {type: "spring", damping: 50, stiffness: 200}}}>
+    <section ref={targetRef} className="static sm:relative min-h-fit sm:h-[400vh] overflow-x-clip pl-0 pt-7 md:pt-0 lg:pl-[400px] xl:pl-[700px]">
+      <motion.div className="sticky top-[20vh] flex items-start overflow-x-visible max-w-screen md:mx-auto" initial={{height: "fit-content"}} animate={{height: "fit-content"}} exit={{height: "auto", transition: {type: "spring", damping: 50, stiffness: 200}}}>
         <motion.div style={{ x }} className="px-7 grid grid-cols-1 sm:flex gap-10">
           {children}
         </motion.div>

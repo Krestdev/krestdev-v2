@@ -19,8 +19,8 @@ function LocaleSelect({defaultValue, children}: Props) {
       }
   return (
     <Select defaultValue={defaultValue} onValueChange={onChange} disabled={isPending}>
-        <SelectTrigger className='w-fit uppercase rounded-none'>
-            <SelectValue placeholder={defaultValue}/>
+        <SelectTrigger className='w-fit uppercase rounded-none border-none text-white'>
+            <SelectValue placeholder={defaultValue} />
         </SelectTrigger>
         <SelectContent className='w-10'>
             {children}
