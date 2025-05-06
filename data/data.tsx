@@ -85,7 +85,7 @@ export function useTarifData(): TarifItem[] {
       subDesc: t("Support.sub"),
       title: t("Support.title"),
       description: t("Support.description"),
-      prix: "300 000 FCFA",
+      prix: "100 000 FCFA",
       offre: [
         t("Support.offres.un"),
         t("Support.offres.deux"),

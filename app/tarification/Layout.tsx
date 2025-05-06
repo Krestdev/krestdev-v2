@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function LogInLayout({
+export default function TarificationLayout({
   children,
 }: {
   children: React.ReactNode;

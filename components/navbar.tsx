@@ -29,7 +29,7 @@ function Navbar() {
         </span>
         <div className='flex items-center gap-3'>
           <LocaleSwitcher />
-          <Button className='h-[40px] hidden sm:flex'>{t("contact")}</Button>
+          <Button onClick={() => router.push("/contacts")} className='h-[40px] hidden sm:flex'>{t("contact")}</Button>
         </div>
       </div>
     </div>

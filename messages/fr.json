@@ -189,5 +189,24 @@
         "sub": "En option avec chaque formule."
       }
     }
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "Une idée, un besoin, une question ? Nous sommes là pour vous accompagner à chaque étape.",
+    "Form": {
+      "title": "Formulaire de contact",
+      "description": "Laissez-nous un message, nous vous répondrons sous 48h.",
+      "nom": "Nom",
+      "email": "Adresse mail",
+      "tel": "Numéro de téléphone",
+      "tel2": "Téléphone",
+      "objet": "Objet",
+      "objetLabel": "Objet du message",
+      "message": "Message",
+      "messageLabel": "Décrivez-nous votre message",
+      "localisation": "Localisation",
+      "submit": "Envoyer le message",
+      "confirm": "Mail envoyé avec success"
+    }
   }
 }
