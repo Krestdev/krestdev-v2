@@ -54,7 +54,7 @@ const GridDomain = () => {
                         </h2>
                     </div>
                     <p className='text-[#CACACA] text-[14px] text-start lg:max-w-[408px] w-full'>
-                        {"Chaque solution que nous créons est pensée pour booster votre visibilité et votre performance."}
+                        {t("description")}
                     </p>
                 </div>
                 <span className='grid grid-cols-1 lg:grid-cols-3 gap-7'>

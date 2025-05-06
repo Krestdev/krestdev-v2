@@ -24,7 +24,7 @@ const Hero = () => {
                         <p className='text-[#D9EBFF] w-[317px] md:w-[640px]'>{t("description")}</p>
                         <div className='flex flex-col gap-4 sm:flex-row sm:gap-7 w-full md:w-fit'>
                             <Button className='text-black bg-white'>{t("services")}</Button>
-                            <Button>{t("contact")}</Button>
+                            <Button>{t("portofolio")}</Button>
                         </div>
                     </div>
                     <img

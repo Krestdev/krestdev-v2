@@ -11,34 +11,13 @@ import Temoignage from '@/components/Home/Temoignage/Temoignage';
 import { HorizontalScrollCarousel } from '@/components/horizontal-scroll';
 import LocaleSwitcher from '@/components/locale-switcher';
 import { TextReveal } from '@/components/ui/text-reveal';
+import { useAboutData } from '@/data/data';
 import { useTranslations } from 'next-intl';
 
 export default function Home() {
   const t = useTranslations('About');
-  const t1 = useTranslations('HomePage');
-  const about = [
-    {
-      image: "/images/mission.png",
-      title: t("mission"),
-      content: t("missionDescription")
-    },
-    {
-      image: "/images/expertise.png",
-      title: t("expertise"),
-      content: t("expertiseDescription")
-    },
-    {
-      image: "/images/approche.png",
-      title: t("approche"),
-      content: t("approachDescription")
-    },
-    {
-      image: "/images/valeur.png",
-      title: t("valeurs"),
-      content: t("valuesDescription")
-    },
-  ]
-
+  
+      const about = useAboutData();
   return (
     <div className='flex flex-col items-center justify-center overflow-clip'>
       <Hero />

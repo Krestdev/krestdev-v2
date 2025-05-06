@@ -1,20 +1,17 @@
 {
-  "HomePage": {
-    "title": "Bonjour le Monde!"
-  },
   "Navbar": {
     "services": "Services",
     "about": "À propos",
     "tarif": "Tarification",
-    "contact": "Contact",
-    "portofolio": "Consulter notre Portfolio"
+    "porto": "Portfolio",
+    "contact": "Contact"
   },
   "Hero": {
     "title1": "Transformez vos idées en ",
     "title2": "Solutions digitales puissantes.",
     "description": "Agence spécialisée en développement web, design sur mesure et stratégie marketing pour propulser votre entreprise",
     "services": "Découvrez nos services",
-    "contact": "Contactez-nous"
+    "portofolio": "Consulter notre Portfolio"
   },
   "About": {
     "description": "Chez KrestDev, nous transformons vos ambitions en succès concrets. De la première idée au lancement final, notre équipe créative et technique met son expertise au service de votre croissance. Innovation, performance et impact sont au cœur de tout ce que nous réalisons.",
@@ -106,5 +103,91 @@
     "phone": "Numéro de Téléphone",
     "address": "Adresse",
     "copyright": "© 2025 Copyright KrestDev - Propulsé par KrestDev "
+  },
+  "Services": {
+    "title": "Nos Services",
+    "description": "Des solutions digitales sur-mesure pour propulser votre marque",
+    "Process": {
+      "title": "Notre processus",
+      "description": "Chaque projet que nous initions suis une méthodologie visant à garantir sa réalisation",
+      "besoin": {
+        "title": "Compréhension du besoin",
+        "description": "Nous commençons par un échange approfondi pour comprendre vos objectifs, vos utilisateurs, votre environnement et les problématiques spécifiques à résoudre."
+      },
+      "solution": {
+        "title": "Co-création de la solution",
+        "description": "Nous définissons ensemble la meilleure stratégie à adopter — design, fonctionnalités, messages, technologies."
+      },
+      "developpement": {
+        "title": "Production & développement",
+        "description": "Qu’il s’agisse d’un site, d’une app ou d’un plan marketing, nous passons à la réalisation avec agilité, transparence et rigueur."
+      },
+      "test": {
+        "title": "Tests & ajustements",
+        "description": "Nous vérifions, testons et peaufinons chaque détail pour garantir une qualité optimale. Responsive, performance, sécurité, accessibilité… tout est validé."
+      },
+      "suivi": {
+        "title": "Lancement & suivi",
+        "description": "Le projet est mis en ligne ou livré selon les standards les plus exigeants. Nous restons disponibles pour assurer le support, la maintenance ou les évolutions futures."
+      }
+    }
+  },
+  "Apropos": {
+    "title": "À Propos",
+    "description": "Tout ce qu’il faut savoir sur KrestDev"
+  },
+  "Tarification": {
+    "title": "Tarification",
+    "description": "Des solutions pour chaque projet, une approche transparente et flexible.",
+    "Grid": {
+      "montantC": "À partir de",
+      "montantI": "Tarif sur devis",
+      "Start":{
+        "title": "Start",
+        "description": "Idéal pour les indépendants, petites structures ou MVP.",
+        "offres": {
+          "un": "Site vitrine ou landing page",
+          "deux": "Identité visuelle simple (logo, palette)",
+          "trois": "Mise en ligne rapide",
+          "quatre": "Maintenance basique"
+        }, 
+        "sub": "Parfait pour : se lancer vite avec une base professionnelle."
+      },
+      "Boost":{
+        "title": "Boost",
+        "description": "Pensé pour les entreprises en croissance.",
+        "offres": {
+          "un": "Application ou site web dynamique",
+          "deux": "Branding complet (logo, charte graphique, templates)",
+          "trois": "Optimisation SEO + réseaux sociaux",
+          "quatre": "Connexions API / CMS",
+          "cinq": "Support & mises à jour pendant 1 mois"
+        }, 
+        "sub": "Pour les marques qui veulent plus qu’un simple site."
+      },
+      "Scale":{
+        "title": "Scale",
+        "description": "Sur-mesure, pour les projets ambitieux ou complexes.",
+        "offres": {
+          "un": "Stratégie digitale et UX approfondie",
+          "deux": "Développement web et mobile sur-mesure",
+          "trois": "Interconnexions (ERP, CRM, systèmes tiers)",
+          "quatre": "Sécurité avancée, performances & scalabilité",
+          "cinq": "Support agile sur plusieurs mois"
+        }, 
+        "sub": "Parfait pour : se lancer vite avec une base professionnelle."
+      },
+      "Support":{
+        "title": "Support",
+        "description": "Pour rester performant et sécurisé dans le temps.",
+        "offres": {
+          "un": "Sauvegardes, mises à jour, corrections",
+          "deux": "Surveillance de performances",
+          "trois": "Interventions rapides (via support technique)",
+          "quatre": "Rapports mensuels"
+        }, 
+        "sub": "En option avec chaque formule."
+      }
+    }
   }
 }
