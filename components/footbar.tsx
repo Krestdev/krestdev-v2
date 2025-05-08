@@ -6,7 +6,7 @@ import React from 'react'
 function Footbar() {
   const t = useTranslations("Footer")
   return (
-    <div className='flex flex-col items-center bg-radial from-[#1E1E1E] via-[#061D37] to-[#013B7D] w-full'>
+    <div className='flex flex-col items-center bg-radial-[at_50%_0%] from-[#000000] via-[#061D37] to-[#013B7D]  to-100% w-full'>
       <div className='flex flex-wrap gap-10  px-7 lg:px-0 justify-between pt-[96px] pb-10 max-w-[1280px] w-full'>
         <div className='flex flex-col gap-3 max-w-[299px] w-full'>
           <img src="/images/logo.png" alt="logo" className='h-8 w-[161px] object-cover' />

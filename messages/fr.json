@@ -218,7 +218,7 @@
     "description": "Une idée, un besoin, une question ? Nous sommes là pour vous accompagner à chaque étape.",
     "Form": {
       "title": "Formulaire de contact",
-      "description": "Laissez-nous un message, nous vous répondrons sous 48h.",
+      "description": "Laissez-nous un message, nous vous répondrons sous 24h.",
       "nom": "Nom",
       "email": "Adresse mail",
       "tel": "Numéro de téléphone",

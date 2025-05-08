@@ -21,8 +21,8 @@ function Navbar() {
   };
 
   return (
-    <div className='w-full h-[70px] flex justify-center bg-black '>
-      <div className='flex flex-row items-center justify-between max-w-[1280px] w-full h-[70px] px-7'>
+    <div className='sticky inset-0 z-50 w-full flex justify-center bg-transparent'>
+      <div className='flex flex-row items-center justify-between max-w-[1280px] w-full h-[70px] px-7 bg-black/80 md:rounded-[12px] md:absolute md:top-1 md:left-1/2 md:-translate-x-1/2 inset-0 z-50'>
         <div className='flex items-center gap-2'>
           <Menu />
           <Link href={"/"}>

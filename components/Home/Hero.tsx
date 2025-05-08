@@ -11,7 +11,7 @@ const Hero = () => {
     const router = useRouter()
 
     return (
-        <div className='w-full h-[629px] md:mb-[145px] lg:mb-10 lg:h-[1024px] flex flex-col items-start md:items-center'>
+        <div className='w-full h-[629px] md:mb-[145px] lg:mb-10 lg:h-[1080px] xl:h-[1256px] flex flex-col items-start md:items-center'>
             <div
                 className='w-full h-[80%] bg-cover bg-no-repeat flex justify-center items-start md:items-center '
                 style={{
@@ -27,8 +27,8 @@ const Hero = () => {
                         </h1>
                         <p className='text-[#D9EBFF] w-[317px] md:w-[640px]'>{t("description")}</p>
                         <div className='flex flex-col gap-4 sm:flex-row sm:gap-7 w-full md:w-fit'>
-                            <Button onClick={() => router.push("/services")} className='text-black bg-white'>{t("services")}</Button>
-                            <Button onClick={() => router.push("/portfolio")} >{t("portfolio")}</Button>
+                            <Button onClick={() => router.push("/services")} className='text-black bg-white h-[60px]'>{t("services")}</Button>
+                            <Button onClick={() => router.push("/portfolio")} className='h-[60px]'>{t("portfolio")}</Button>
                         </div>
                     </div>
                     <img

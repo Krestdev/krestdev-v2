@@ -18,8 +18,8 @@ import { useTranslations } from 'next-intl';
 
 export default function Home() {
   const t = useTranslations('About');
-  
-      const about = useAboutData();
+
+  const about = useAboutData();
   return (
     <div className='flex flex-col items-center justify-center overflow-clip'>
       <Hero />
@@ -32,7 +32,9 @@ export default function Home() {
             </span>
           ))}
         </HorizontalScrollCarousel>
-        <Statistique />
+      </div>
+      <Statistique />
+      <div className='containerBloc py-0 flex flex-col items-center justify-center'>
         <GridDomain />
         <Realisation />
         <Temoignage />

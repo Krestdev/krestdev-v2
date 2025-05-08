@@ -218,7 +218,7 @@
     "description": "An idea, a need, a question? We are here to support you at every step.",
     "Form": {
       "title": "Contact form",
-      "description": "Leave us a message, we will respond within 48 hours.",
+      "description": "Leave us a message, we will respond within 24 hours.",
       "nom": "Name",
       "email": "Email address",
       "tel": "Phone number",
