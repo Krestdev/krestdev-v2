@@ -1,5 +1,6 @@
 {
   "Navbar": {
+    "accueil": "Accueil",
     "services": "Services",
     "about": "À propos",
     "tarif": "Tarification",
@@ -11,7 +12,7 @@
     "title2": "Solutions digitales puissantes.",
     "description": "Agence spécialisée en développement web, design sur mesure et stratégie marketing pour propulser votre entreprise",
     "services": "Découvrez nos services",
-    "portofolio": "Consulter notre Portfolio"
+    "portfolio": "Consulter notre Portfolio"
   },
   "About": {
     "description": "Chez KrestDev, nous transformons vos ambitions en succès concrets. De la première idée au lancement final, notre équipe créative et technique met son expertise au service de votre croissance. Innovation, performance et impact sont au cœur de tout ce que nous réalisons.",
@@ -58,7 +59,29 @@
   "Temoignages": {
     "title1": "Témoignage",
     "title2": "clients",
-    "description": "Des collaborations qui parlent d’elles-mêmes"
+    "description": "Des collaborations qui parlent d’elles-mêmes",
+    "Temoin": {
+      "un": {
+        "title": "Fondatrice de GreenFood CM",
+        "message": "L’équipe de KrestDev a su transformer ma vision en une plateforme e-commerce intuitive et élégante. Je recommande à 100 % pour leur écoute et leur efficacité."
+      },
+      "deux": {
+        "title": "Responsable IT chez NovaTrans",
+        "message": "Professionnalisme, rigueur et réactivité. KrestDev nous a livré un outil métier parfaitement adapté à notre activité logistique."
+      },
+      "trois": {
+        "title": "Consultante en stratégie digitale",
+        "message": "Un partenaire fiable avec une vraie sensibilité UX. Leurs conseils m’ont permis de repositionner mon offre efficacement."
+      },
+      "quartre": {
+        "title": "CEO de StartNow",
+        "message": "Grâce à KrestDev, notre MVP a vu le jour en un temps record. L’approche agile et leur transparence ont fait toute la différence."
+      },
+      "cinq": {
+        "title": "Responsable communication, ONG FemLead",
+        "message": "Une refonte web réussie, un design impactant, et un accompagnement humain. KrestDev a compris nos valeurs et les a sublimées."
+      }
+    }
   },
   "Equipe": {
     "title1": "L’équipe",
@@ -142,7 +165,7 @@
     "Grid": {
       "montantC": "À partir de",
       "montantI": "Tarif sur devis",
-      "Start":{
+      "Start": {
         "title": "Start",
         "description": "Idéal pour les indépendants, petites structures ou MVP.",
         "offres": {
@@ -150,10 +173,10 @@
           "deux": "Identité visuelle simple (logo, palette)",
           "trois": "Mise en ligne rapide",
           "quatre": "Maintenance basique"
-        }, 
+        },
         "sub": "Parfait pour : se lancer vite avec une base professionnelle."
       },
-      "Boost":{
+      "Boost": {
         "title": "Boost",
         "description": "Pensé pour les entreprises en croissance.",
         "offres": {
@@ -162,10 +185,10 @@
           "trois": "Optimisation SEO + réseaux sociaux",
           "quatre": "Connexions API / CMS",
           "cinq": "Support & mises à jour pendant 1 mois"
-        }, 
+        },
         "sub": "Pour les marques qui veulent plus qu’un simple site."
       },
-      "Scale":{
+      "Scale": {
         "title": "Scale",
         "description": "Sur-mesure, pour les projets ambitieux ou complexes.",
         "offres": {
@@ -174,10 +197,10 @@
           "trois": "Interconnexions (ERP, CRM, systèmes tiers)",
           "quatre": "Sécurité avancée, performances & scalabilité",
           "cinq": "Support agile sur plusieurs mois"
-        }, 
+        },
         "sub": "Parfait pour : se lancer vite avec une base professionnelle."
       },
-      "Support":{
+      "Support": {
         "title": "Support",
         "description": "Pour rester performant et sécurisé dans le temps.",
         "offres": {
@@ -185,7 +208,7 @@
           "deux": "Surveillance de performances",
           "trois": "Interventions rapides (via support technique)",
           "quatre": "Rapports mensuels"
-        }, 
+        },
         "sub": "En option avec chaque formule."
       }
     }
@@ -207,6 +230,24 @@
       "localisation": "Localisation",
       "submit": "Envoyer le message",
       "confirm": "Mail envoyé avec success"
+    }
+  },
+  "Portfolio": {
+    "title": "Portfolio",
+    "description": "Consultez le tableau de nos réalisations",
+    "Projet": {
+      "title": "À Propos du projet",
+      "client": "Client",
+      "service": "Service",
+      "lien": "Consulter la page web",
+      "desc": {
+        "un": "Réalisation d’un site web moderne et responsive pour CREACONSULT, cabinet d’ingénierie et de gestion de projets fondé en 2006. Le site met en valeur leur expertise en projets institutionnels, commerciaux et industriels, ainsi que leur engagement en matière de qualité et d’environnement (certifications ISO 9001 & 14001). L’interface simplifie la communication avec les maîtres d’ouvrage et investisseurs, reflétant les valeurs d’excellence, d’innovation et d’éthique de l’entreprise.",
+        "deux": "Développement d'une application web dédiée à la diffusion d'informations sportives en temps réel. Tyju Info Sport propose une interface interactive et dynamique permettant aux utilisateurs d'accéder à des résultats, des actualités et des statistiques détaillées sur différents sports. L'application est conçue pour offrir une expérience fluide et intuitive, avec des fonctionnalités avancées comme la personnalisation des notifications et le suivi des performances sportives. Le projet intègre une gestion efficace des données sportives pour offrir des informations actualisées et pertinentes, en mettant l'accent sur la rapidité et la précision des contenus.",
+        "trois": "Ce site vitrine rend hommage à Jeanne Caroline Mfege, une femme de foi et de courage, dont le combat contre le cancer a inspiré la création d’une fondation humanitaire. À travers une interface sobre et chaleureuse, le site présente la mission de la fondation : améliorer l'accès aux soins de santé pour les populations vulnérables au Cameroun. Il met en avant l’héritage de solidarité, de dignité et de spiritualité de Jeanne Caroline, tout en offrant aux visiteurs un espace d’information, de sensibilisation et de mobilisation autour des actions de la fondation.",
+        "quartre": "Réalisation d’un site vitrine pour COTRAF, une entreprise leader dans le transport industriel et pétrolier au Cameroun. Ce site a été conçu pour refléter les valeurs et l’expertise de la société : fiabilité, professionnalisme et engagement envers ses partenaires. L’objectif principal était de présenter l’entreprise, son histoire, ses services, et son équipe à travers une interface moderne, fluide et accessible. Ce projet met en valeur l’importance d’une présence en ligne professionnelle pour renforcer la crédibilité d’une entreprise dans un secteur stratégique.",
+        "cinq": "Création d’un site vitrine moderne et fonctionnel pour Saga Africa, un restaurant afro-fusion qui met à l’honneur la diversité culinaire du continent africain. Le site incarne l’esprit chaleureux et accueillant du lieu, tout en offrant une expérience utilisateur fluide et intuitive. Il permet aux visiteurs de consulter un menu interactif avec photos et descriptions, de commander leurs plats en ligne, de payer de manière sécurisée et de réserver une table directement depuis la plateforme. Entièrement responsive, le site s’adapte à tous les supports (ordinateurs, tablettes, smartphones), combinant ainsi une forte identité visuelle avec des fonctionnalités pratiques pour répondre aux besoins des clients et valoriser l’univers unique de Saga Africa.",
+        "six": "Création d’un site vitrine institutionnel pour Krest Holding, un conglomérat dynamique opérant dans des secteurs clés tels que les solutions digitales, la restauration, l’architecture, le génie civil, le bien-être et la gestion de fourrière. Le site met en avant la diversité et la complémentarité des filiales du groupe à travers une interface élégante, responsive et structurée. Chaque domaine d’activité bénéficie d’une présentation dédiée, permettant aux visiteurs de découvrir l’expertise de Krest Holding dans les services numériques avec KrestDev, la restauration moderne, le design architectural durable, les études géotechniques, les loisirs urbains (rooftop, fitness, spa) ainsi que la gestion municipale de fourrières. Ce projet vise à renforcer l’image de marque du groupe, à valoriser ses engagements en matière d’innovation et de performance, et à faciliter les contacts avec les partenaires et clients potentiels."
+      }
     }
   }
 }

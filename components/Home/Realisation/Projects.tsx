@@ -7,37 +7,11 @@ import {
 } from "@/components/ui/carousel";
 import React from "react";
 import ProjectDisplay from "./project-display";
-import { title } from "process";
+import { useProjetData } from "@/data/data";
 
 function Projects() {
 
-  const projets = [
-    {
-      title: "Project Sample",
-      image: "https://images.pexels.com/photos/3801422/pexels-photo-3801422.jpeg",
-      url: "#"
-    },
-    {
-      title: "Project Sample",
-      image: "https://images.pexels.com/photos/3801422/pexels-photo-3801422.jpeg",
-      url: "#"
-    },
-    {
-      title: "Project Sample",
-      image: "https://images.pexels.com/photos/3801422/pexels-photo-3801422.jpeg",
-      url: "#"
-    },
-    {
-      title: "Project Sample",
-      image: "https://images.pexels.com/photos/3801422/pexels-photo-3801422.jpeg",
-      url: "#"
-    },
-    {
-      title: "Project Sample",
-      image: "https://images.pexels.com/photos/3801422/pexels-photo-3801422.jpeg",
-      url: "#"
-    },
-  ]
+  const projets = useProjetData()
 
   return (
     <section
@@ -58,9 +32,9 @@ function Projects() {
               key={i}
             >
               <ProjectDisplay
-                url={x.url}
+                url={x.lien}
                 image={x.image}
-                title={x.title}
+                title={x.nom}
               />
             </CarouselItem>
           ))}

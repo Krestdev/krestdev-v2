@@ -26,7 +26,7 @@ export default function TarificationLayout({
 
   return (
     <div>
-      <Heading title={t("title")} description={t("description")} />
+      {/* <Heading title={t("title")} description={t("description")} /> */}
       {children}
     </div>
   );

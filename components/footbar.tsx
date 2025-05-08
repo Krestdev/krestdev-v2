@@ -6,11 +6,11 @@ import React from 'react'
 function Footbar() {
   const t = useTranslations("Footer")
   return (
-    <div className='flex flex-col items-center bg-gradient-to-b from-[#1E1E1E] via-[#061D37] to-[#013B7D] w-full '>
+    <div className='flex flex-col items-center bg-radial from-[#1E1E1E] via-[#061D37] to-[#013B7D] w-full'>
       <div className='flex flex-wrap gap-10  px-7 lg:px-0 justify-between pt-[96px] pb-10 max-w-[1280px] w-full'>
         <div className='flex flex-col gap-3 max-w-[299px] w-full'>
           <img src="/images/logo.png" alt="logo" className='h-8 w-[161px] object-cover' />
-          <p className='text-[#D9EBFF] text-[14px] leading-[100%] tracking-[0%] font-normal'>{t("description")}</p>
+          <p className='text-[#D9EBFF] text-[14px] font-normal'>{t("description")}</p>
         </div>
         <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-2'>

@@ -94,4 +94,112 @@ export function useTarifData(): TarifItem[] {
       ],
     },
   ]
+};
+
+interface Portfolio {
+  slug: string,
+  nom: string,
+  preview: string,
+  image: string,
+  lien: string,
+  description: string,
+  service: string
+}
+
+export function useProjetData(): Portfolio[] {
+  const t = useTranslations("Portfolio.Projet.desc")
+
+  return [
+    {
+      nom: "CREACONSULT",
+      preview: "/images/preCrea.png",
+      image: "/images/imCrea.png",
+      lien: "https://www.betcreaconsult.com/",
+      description: t("un"),
+      service: "Site Web",
+      slug: "crea_consult"
+    },
+    {
+      nom: "TYJU INFOSPORTS",
+      preview: "/images/preTyju.png",
+      image: "/images/imTyju.png",
+      lien: "https://www.tyjuinfosport.com/",
+      description: t("deux"),
+      service: "Site Web",
+      slug: "tyju_infosport"
+    },
+    {
+      nom: "FONDATION JEANNE CAROLINE",
+      preview: "/images/preFondation.png",
+      image: "/images/imFondation.png",
+      lien: "https://www.fondationjeannecarolinemfege.org/",
+      description: t("trois"),
+      service: "Site Web",
+      slug: "fondationjeannecaroline"
+    },
+    {
+      nom: "COTRAF",
+      preview: "/images/preCotraf.png",
+      image: "/images/imCotraf.png",
+      lien: "https://cotraf-cm.com/",
+      description: t("quartre"),
+      service: "Site Web",
+      slug: "cotraf"
+    },
+    {
+      nom: "SAGA AFRICA",
+      preview: "/images/preSaga.png",
+      image: "/images/imSaga.png",
+      lien: "https://www.saga-africa.com/",
+      description: t("cinq"),
+      service: "Site Web",
+      slug: "saga_africa"
+    },
+    {
+      nom: "KREST HOLDING",
+      preview: "/images/preKrest.png",
+      image: "/images/imKrest.png",
+      lien: "https://www.krestholding.com/",
+      description: t("six"),
+      service: "Site Web",
+      slug: "krest_holding"
+    },
+  ]
+}
+
+export function useTestimonialData() {
+  const t = useTranslations("Temoignages.Temoin")
+
+  return [
+    {
+      image: "/images/aline.png",
+      name: "Aline Ndjemba",
+      titre: t("un.title"),
+      description: t("un.message"),
+    },
+    {
+      image: "/images/steve.png",
+      name: "Steve Mbarga",
+      titre: t("deux.title"),
+      description: t("deux.message"),
+    },
+    {
+      image: "/images/juliette.png",
+      name: "Juliette Nguimatsia",
+      titre: t("trois.title"),
+      description: t("trois.message"),
+    },
+    {
+      image: "/images/eric.png",
+      name: "Eric Fokou",
+      titre: t("quartre.title"),
+      description: t("quartre.message"),
+    },
+    {
+      image: "/images/mireille.png",
+      name: "Mireille Essomba",
+      titre: t("cinq.title"),
+      description: t("cinq.message"),
+    }
+  ]
 }

@@ -1,3 +1,5 @@
+"use client"
+
 import Boost from '@/components/Home/Contact/boost';
 import GridDomain from '@/components/Home/Domain/GridDomain';
 import Equipe from '@/components/Home/Equipe/Equipe';

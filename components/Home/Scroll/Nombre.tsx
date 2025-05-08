@@ -23,9 +23,9 @@ const Nombre = ({ nombre, uni, title }: NombreProps) => {
     return (
         <div className='flex flex-col items-center lg:items-start'>
             <p>{title}</p>
-            <div className='flex items-center'>
-                <motion.h1 className='font-semibold text-[80px] text-black '>{rounded}</motion.h1>
-                <p className='font-semibold text-[80px] text-black '>{uni}</p>
+            <div className='flex flex-row '>
+                <motion.h1 className='font-semibold text-[80px] text-white h-[124px] flex items-center'>{rounded}</motion.h1>
+                <p className='font-semibold text-[80px] text-white '>{uni}</p>
             </div>
         </div>
     )

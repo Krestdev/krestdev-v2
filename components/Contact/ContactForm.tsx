@@ -40,19 +40,18 @@ const ContactForm = () => {
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     console.log(data);
-    // toast.success(t("confirm"))
     form.reset()
   }
 
   const t = useTranslations("Contact.Form")
 
   return (
-    <div className='flex flex-col items-center md:flex-row gap-10 py-[96px] px-7 lg:px-0'>
+    <div className='flex flex-col justify-center lg:flex-row h-fit w-full gap-10 py-[96px] px-7'>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col p-7 gap-8 rounded-[12px] border border-[#D9EBFF] '>
           <div className='flex flex-col gap-2'>
             <h2>{t("title")}</h2>
-            <p>{t("description")}</p>
+            <p className='text-black'>{t("description")}</p>
           </div>
           <FormField
             control={form.control}
@@ -98,7 +97,7 @@ const ContactForm = () => {
             name="objet"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t("object")}</FormLabel>
+                <FormLabel>{t("objet")}</FormLabel>
                 <FormControl>
                   <Input {...field} className='max-w-[360px] w-full px-4 py-2 h-[40px] border-[#BEBEBE] rounded-none' placeholder={t("objetLabel")} />
                 </FormControl>

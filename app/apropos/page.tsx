@@ -1,5 +1,6 @@
 "use client"
 
+import Images from '@/components/Apropos/Images'
 import Boost from '@/components/Home/Contact/boost'
 import Equipe from '@/components/Home/Equipe/Equipe'
 import Section from '@/components/Home/Scroll/Section'
@@ -15,8 +16,9 @@ const page = () => {
     const about = useAboutData();
     return (
         <div className='flex flex-col items-center justify-center overflow-clip'>
+            <Images />
             <div className='containerBloc py-0 flex flex-col items-center justify-center'>
-                <TextReveal text={t("description")} className='flex w-full justify-center' />
+                <TextReveal text={t("description")} className='flex w-full justify-center pt-10 md:pt-0' />
                 <HorizontalScrollCarousel>
                     {about.map((item, i) => (
                         <span key={i}>
@@ -24,8 +26,8 @@ const page = () => {
                         </span>
                     ))}
                 </HorizontalScrollCarousel>
-                <Statistique />
             </div>
+            <Statistique />
             <Equipe />
             <Boost />
         </div>

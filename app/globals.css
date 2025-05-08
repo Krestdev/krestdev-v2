@@ -126,7 +126,7 @@
     @apply bg-background text-foreground font-sans;
   }
   p {
-    @apply text-paragraph;
+    @apply text-[#F4F4F4];
   }
   h1, h2, h3 {
     @apply leading-[120%] tracking-[-3%] font-semibold text-center;

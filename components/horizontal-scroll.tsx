@@ -29,7 +29,7 @@ export const HorizontalScrollCarousel = ({children}:{children:React.ReactNode}) 
   });
 
   return (
-    <section ref={targetRef} className="static sm:relative min-h-fit sm:h-[400vh] overflow-x-clip pl-0 pt-7 md:pt-0 lg:pl-[400px] xl:pl-[700px]">
+    <section ref={targetRef} className="static sm:relative min-h-fit sm:h-[400vh] overflow-x-clip pl-0 pt-7 md:pt-0 lg:pl-[400px] xl:pl-[700px] pb-10">
       <motion.div className="sticky top-[20vh] flex items-start overflow-x-visible max-w-screen md:mx-auto" initial={{height: "fit-content"}} animate={{height: "fit-content"}} exit={{height: "auto", transition: {type: "spring", damping: 50, stiffness: 200}}}>
         <motion.div style={{ x }} className="px-7 grid grid-cols-1 sm:flex gap-10">
           {children}

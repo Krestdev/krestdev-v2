@@ -13,7 +13,7 @@ const Heading = ({title, description}: Props) => {
         backgroundSize: 'cover',
         overflow: 'hidden',
     }}
-    className='flex flex-col items-center gap-[10px] px-[10px] py-20'
+    className='w-full flex flex-col items-center gap-[10px] px-[10px] py-20'
     >
         <div className='flex flex-col items-center gap-10 px-7 max-w-[1280px] w-full'>
             <h1 className='text-white'>{title}</h1>

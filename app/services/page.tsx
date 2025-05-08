@@ -6,7 +6,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='flex flex-col items-center overflow-clip'>
+    <div className='w-full flex flex-col items-center overflow-clip'>
         <GridDomain />
         <Statistique />
         <Processus />
