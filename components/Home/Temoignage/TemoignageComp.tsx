@@ -12,7 +12,7 @@ const TemoignageComp = ({image, name, description, titre}: Temoignage) => {
     <div className='md:h-[440px] w-[337px] flex flex-col items-center justify-between border border-[#BEBEBE] px-7 py-10'>
         <div className='flex flex-col gap-7'>
             <img src="/images/apostrophe.png" alt="" className='w-[46px] h-10 object-cover' />
-            <p className='text-[18px]'>{`"${description}"`}</p>
+            <p className='text-[18px] text-black'>{`"${description}"`}</p>
         </div>
         <div className='flex flex-row items-center gap-7'>
             <img src={image} alt="profil" className='w-[81px] h-[81px] rounded-[41px] object-cover ' />
