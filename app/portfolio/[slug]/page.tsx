@@ -20,7 +20,7 @@ const Page = ({ params }: PageProps) => {
     })
   }, [params])
 
-  if (!slug) return <div>Loading...</div> // Ou un loader
+  if (!slug) return <div>Loading...</div>
 
   const projet = projets.find(p => p.slug === slug)
 

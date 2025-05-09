@@ -240,6 +240,7 @@
     "description": "View the table of our achievements",
     "Projet": {
       "title": "About the project",
+      "description": "Project created by Krestdev",
       "client": "Client",
       "service": "Service",
       "lien": "View the web page",

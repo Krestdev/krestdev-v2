@@ -9,7 +9,7 @@ import React from "react";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string, slug: string }> }): Promise<Metadata> {
 
   const { locale, slug } = await params
-  const t = await getTranslations({ locale, namespace: "Projet" });
+  const t = await getTranslations({ locale, namespace: "Portfolio.Projet" });
 
   return {
     title: getPageTitle(t("title") + slug),

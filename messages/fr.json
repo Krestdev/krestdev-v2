@@ -240,6 +240,7 @@
     "description": "Consultez le tableau de nos réalisations",
     "Projet": {
       "title": "À Propos du projet",
+      "description": "Projet realisé par Krestdev",
       "client": "Client",
       "service": "Service",
       "lien": "Consulter la page web",
