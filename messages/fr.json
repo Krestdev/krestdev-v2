@@ -229,7 +229,10 @@
       "messageLabel": "Décrivez-nous votre message",
       "localisation": "Localisation",
       "submit": "Envoyer le message",
-      "confirm": "Mail envoyé avec success"
+      "submitting": "En cours d'envoie",
+      "confirm": "Mail envoyé avec success",
+      "success": "Message envoyé avec succès",
+      "error": "Erreur lors de l'envoi"
     }
   },
   "Portfolio": {

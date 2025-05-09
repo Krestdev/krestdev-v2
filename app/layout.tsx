@@ -3,8 +3,9 @@ import { Instrument_Serif, Inter } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/layout";
 import { config } from "@/data/config";
-import {NextIntlClientProvider} from 'next-intl';
-import {getLocale} from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale } from 'next-intl/server';
+import { Toaster } from 'sonner'; // Import ajouté
 
 const primaryFont = Inter({
   variable: "--font-inter",
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  openGraph:{
+  openGraph: {
     title: {
       template: `%s - ${config.name}`,
       default: `${config.name} - Transformez vos ambitions digitales en réussites mesurables.`
@@ -59,6 +60,13 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale}>
           <Layout>
             {children}
+            <Toaster 
+              position="top-center"
+              richColors
+              closeButton
+              expand={false}
+              visibleToasts={3}
+            />
           </Layout>
         </NextIntlClientProvider>
       </body>

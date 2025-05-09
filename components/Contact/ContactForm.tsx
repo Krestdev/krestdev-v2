@@ -9,10 +9,10 @@ import { Input } from '../ui/input'
 import { useTranslations } from 'next-intl'
 import { Button } from '../ui/button'
 import Info from './Info'
-
+import { toast } from 'sonner'
 
 const formSchema = z.object({
-  nom: z.string().min(3, {
+  name: z.string().min(3, {
     message: "Veuillez renseigner au moins 3 caractères"
   }),
   email: z.string().email(),
@@ -26,11 +26,10 @@ const formSchema = z.object({
 })
 
 const ContactForm = () => {
-
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      nom: "",
+      name: "",
       email: "",
       phone: "",
       objet: "",
@@ -38,12 +37,42 @@ const ContactForm = () => {
     },
   });
 
-  const onSubmit = async (data: z.infer<typeof formSchema>) => {
-    console.log(data);
-    form.reset()
-  }
-
   const t = useTranslations("Contact.Form")
+
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+
+        body: JSON.stringify({
+          name: data.name, 
+          email: data.email,
+          phone: data.phone,
+          profession: "", 
+          subject: data.objet, 
+          message: data.message,
+          lang: 'fr'
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Erreur serveur");
+      }
+
+      toast.success(t("success"));
+      form.reset();
+
+    } catch (error: any) {
+      toast.error(error.message || t("error"));
+      console.error("Erreur:", error);
+    }
+  };
 
   return (
     <div className='flex flex-col justify-center lg:flex-row h-fit w-full gap-10 py-[96px] px-7'>
@@ -53,9 +82,10 @@ const ContactForm = () => {
             <h2>{t("title")}</h2>
             <p className='text-black'>{t("description")}</p>
           </div>
+
           <FormField
             control={form.control}
-            name="nom"
+            name="name"
             render={({ field }) => (
               <FormItem>
                 <FormLabel>{t("nom")}</FormLabel>
@@ -66,6 +96,7 @@ const ContactForm = () => {
               </FormItem>
             )}
           />
+
           <FormField
             control={form.control}
             name="email"
@@ -79,6 +110,7 @@ const ContactForm = () => {
               </FormItem>
             )}
           />
+
           <FormField
             control={form.control}
             name="phone"
@@ -92,6 +124,7 @@ const ContactForm = () => {
               </FormItem>
             )}
           />
+
           <FormField
             control={form.control}
             name="objet"
@@ -105,6 +138,7 @@ const ContactForm = () => {
               </FormItem>
             )}
           />
+
           <FormField
             control={form.control}
             name="message"
@@ -118,7 +152,10 @@ const ContactForm = () => {
               </FormItem>
             )}
           />
-          <Button type='submit' className='w-fit'>{t("submit")}</Button>
+
+          <Button type='submit' className='w-fit' disabled={form.formState.isSubmitting}>
+            {form.formState.isSubmitting ? t("submitting") : t("submit")}
+          </Button>
         </form>
       </Form>
       <Info />
