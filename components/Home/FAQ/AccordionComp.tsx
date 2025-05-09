@@ -20,7 +20,7 @@ export function AccordionComp({ items }: ItemsProps) {
             {
                 items.map((item, index) => (
                     <AccordionItem key={index} value={`item-${index}`} className="max-w-[1024px] w-full">
-                        <AccordionTrigger className="w-full text-[24px] h-[90px]">{item.trigger}</AccordionTrigger>
+                        <AccordionTrigger className="w-full text-[20px] sm:text-[24px] h-[90px]">{item.trigger}</AccordionTrigger>
                         <AccordionContent className="w-full text-[18px]">{item.content}</AccordionContent>
                     </AccordionItem>
                 ))
