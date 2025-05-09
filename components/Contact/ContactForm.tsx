@@ -10,6 +10,8 @@ import { useTranslations } from 'next-intl'
 import { Button } from '../ui/button'
 import Info from './Info'
 import { toast } from 'sonner'
+import { locales } from '@/i18n/config'
+import { useRouter } from 'next/navigation'
 
 const formSchema = z.object({
   name: z.string().min(3, {
@@ -25,6 +27,7 @@ const formSchema = z.object({
   })
 })
 
+
 const ContactForm = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -38,6 +41,7 @@ const ContactForm = () => {
   });
 
   const t = useTranslations("Contact.Form")
+  const locale = useRouter()
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
 
@@ -49,13 +53,13 @@ const ContactForm = () => {
         },
 
         body: JSON.stringify({
-          name: data.name, 
+          name: data.name,
           email: data.email,
           phone: data.phone,
-          profession: "", 
-          subject: data.objet, 
+          profession: "",
+          subject: data.objet,
           message: data.message,
-          lang: 'fr'
+          lang: locale
         }),
       });
 
