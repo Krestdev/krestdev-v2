@@ -392,7 +392,7 @@ const sendEmailWithAttachment = async (fields: any, attachments: any) => {
     </div>
     
     <div class="footer">
-      <p>© 2024 Nom de votre entreprise. Tous droits réservés.</p>
+      <p>© 2024 Krestdev. Tous droits réservés.</p>
       <p>Si vous n'êtes pas à l'origine de cette demande, veuillez <a href="mailto:support@yourcompany.com" style="color: #700032;">nous prévenir</a> immédiatement.</p>
     </div>
   </div>
