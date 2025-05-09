@@ -112,7 +112,7 @@ export function useProjetData(): Portfolio[] {
   return [
     {
       nom: "CREACONSULT",
-      preview: "/images/preCrea.png",
+      preview: "/images/preCrea.webp",
       image: "/images/imCrea.png",
       lien: "https://www.betcreaconsult.com/",
       description: t("un"),
@@ -121,7 +121,7 @@ export function useProjetData(): Portfolio[] {
     },
     {
       nom: "TYJU INFOSPORTS",
-      preview: "/images/preTyju.png",
+      preview: "/images/preTyju.webp",
       image: "/images/imTyju.png",
       lien: "https://www.tyjuinfosport.com/",
       description: t("deux"),
@@ -130,7 +130,7 @@ export function useProjetData(): Portfolio[] {
     },
     {
       nom: "FONDATION JEANNE CAROLINE",
-      preview: "/images/preFondation.png",
+      preview: "/images/preFondation.webp",
       image: "/images/imFondation.png",
       lien: "https://www.fondationjeannecarolinemfege.org/",
       description: t("trois"),
@@ -139,7 +139,7 @@ export function useProjetData(): Portfolio[] {
     },
     {
       nom: "COTRAF",
-      preview: "/images/preCotraf.png",
+      preview: "/images/preCotraf.webp",
       image: "/images/imCotraf.png",
       lien: "https://cotraf-cm.com/",
       description: t("quartre"),
@@ -148,7 +148,7 @@ export function useProjetData(): Portfolio[] {
     },
     {
       nom: "SAGA AFRICA",
-      preview: "/images/preSaga.png",
+      preview: "/images/preSaga.webp",
       image: "/images/imSaga.png",
       lien: "https://www.saga-africa.com/",
       description: t("cinq"),
@@ -157,7 +157,7 @@ export function useProjetData(): Portfolio[] {
     },
     {
       nom: "KREST HOLDING",
-      preview: "/images/preKrest.png",
+      preview: "/images/preKrest.webp",
       image: "/images/imKrest.png",
       lien: "https://www.krestholding.com/",
       description: t("six"),
@@ -172,31 +172,31 @@ export function useTestimonialData() {
 
   return [
     {
-      image: "/images/aline.png",
+      image: "/images/aline.webp",
       name: "Aline Ndjemba",
       titre: t("un.title"),
       description: t("un.message"),
     },
     {
-      image: "/images/steve.png",
+      image: "/images/steve.webp",
       name: "Steve Mbarga",
       titre: t("deux.title"),
       description: t("deux.message"),
     },
     {
-      image: "/images/juliette.png",
+      image: "/images/juliette.webp",
       name: "Juliette Nguimatsia",
       titre: t("trois.title"),
       description: t("trois.message"),
     },
     {
-      image: "/images/eric.png",
+      image: "/images/eric.webp",
       name: "Eric Fokou",
       titre: t("quartre.title"),
       description: t("quartre.message"),
     },
     {
-      image: "/images/mireille.png",
+      image: "/images/mireille.webp",
       name: "Mireille Essomba",
       titre: t("cinq.title"),
       description: t("cinq.message"),
