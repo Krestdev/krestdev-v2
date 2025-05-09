@@ -164,6 +164,15 @@ export function useProjetData(): Portfolio[] {
       service: "Site Web",
       slug: "krest_holding"
     },
+    {
+      nom: "LE CARINO PIZZERIA",
+      preview: "/images/preCarino.webp",
+      image: "/images/imCarino.webp",
+      lien: "https://www.le-carino.com/",
+      description: t("sept"),
+      service: "Site Web",
+      slug: "le_carino_pizzeria"
+    },
   ]
 }
 

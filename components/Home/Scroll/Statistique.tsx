@@ -4,6 +4,10 @@ import Nombre from './Nombre';
 
 const Statistique = () => {
     const t = useTranslations('Statistics');
+    const experience =(x: number) => {
+        return (new Date()).getFullYear() - x
+    }
+
     return (
         <div className='flex justify-center w-full bg-black'>
             <div className='flex flex-col items-center gap-10 py-10 md:py-[60px] lg:py-[96px] max-w-[1280px] w-full'>
@@ -19,7 +23,7 @@ const Statistique = () => {
                     <div className='grid grid-cols-1 md:grid-cols-3 gap-7'>
                         <Nombre nombre={20} uni='+' title={t("livre")} />
                         <Nombre nombre={95} uni='%' title={t("clients")} />
-                        <Nombre nombre={12} title={t("accompagne")} />
+                        <Nombre nombre={experience(2020)} title={t("annee")} />
                     </div>
                 </div>
             </span>
