@@ -22,6 +22,7 @@ const EquipeComp = ({ nom, poste, image }: Props) => {
       }}
       className="group flex flex-col justify-end p-7 gap-[10px]"
     >
+      <div className='absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent'/>
       {/* Dégradé */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}

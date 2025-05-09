@@ -10,22 +10,22 @@ const Equipe = () => {
         {
             nom: "Guidaye Viche",
             poste: t("chef"),
-            image: "/images/profil.png"
+            image: "/images/viche.webp"
         },
         {
             nom: "Nguezet Jordan",
             poste: t("backend"),
-            image: "/images/profil.png"
+            image: "/images/jordan.webp"
         },
         {
             nom: "Adiogo Hans",
             poste: t("frontend"),
-            image: "/images/profil.png"
+            image: "/images/jason.webp"
         },
         {
             nom: "Nzogning Socrate",
             poste: t("frontend"),
-            image: "/images/profil.png"
+            image: "/images/socrate.webp"
         },
     ]
     return (
