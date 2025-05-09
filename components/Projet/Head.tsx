@@ -34,7 +34,7 @@ const Head = ({ nom, preview }: Props) => {
                 <div className='flex flex-col items-center gap-10 px-7 max-w-[1280px] w-full relative z-30'>
                     <div className='flex flex-row items-center gap-3 w-fit'>
                         <p className='subtitle text-[#D9EBFF] text-[14px] text-center max-w-[640px] w-full'>{t("title")}</p>
-                        <ChevronRight className='text-[#D9EBFF] text-[16px] font-semibold' />
+                        <ChevronRight className='text-[#D9EBFF]' />
                         <p className='text-[#D9EBFF] text-[14px] font-semibold text-center max-w-[640px] w-full text-nowrap'>{nom}</p>
                     </div>
                     <h1 className='text-white'>{nom}</h1>
