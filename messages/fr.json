@@ -89,7 +89,8 @@
     "description": "Une équipe passionnée réunissant designers, développeurs, stratèges et marketeurs pour faire rayonner votre projet.",
     "chef": "Chef de projet",
     "backend": "Développeur Backend",
-    "frontend": "Développeur Frontend"
+    "frontend": "Développeur Frontend",
+    "graphic": "Designer Graphique"
   },
   "FAQ": {
     "title": "Questions Fréquemment Posées",

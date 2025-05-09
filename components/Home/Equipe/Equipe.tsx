@@ -3,31 +3,11 @@ import React from 'react'
 import EquipeComp from './EquipeComp';
 import { div } from 'framer-motion/client';
 import { EquipeCar } from './EqupeCar';
+import { useTeamData } from '@/data/data';
 
 const Equipe = () => {
     const t = useTranslations("Equipe");
-    const equipe = [
-        {
-            nom: "Guidaye Viche",
-            poste: t("chef"),
-            image: "/images/viche.webp"
-        },
-        {
-            nom: "Nguezet Jordan",
-            poste: t("backend"),
-            image: "/images/jordan.webp"
-        },
-        {
-            nom: "Adiogo Hans",
-            poste: t("frontend"),
-            image: "/images/jason.webp"
-        },
-        {
-            nom: "Nzogning Socrate",
-            poste: t("frontend"),
-            image: "/images/socrate.webp"
-        },
-    ]
+    const equipe = useTeamData();
     return (
         <div className='w-full flex flex-col items-center py-[60px] md:py-[96px] gap-10'
             style={{
