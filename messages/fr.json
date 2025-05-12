@@ -62,24 +62,24 @@
     "description": "Des collaborations qui parlent d’elles-mêmes",
     "Temoin": {
       "un": {
-        "title": "Fondatrice de GreenFood CM",
-        "message": "L’équipe de KrestDev a su transformer ma vision en une plateforme e-commerce intuitive et élégante. Je recommande à 100 % pour leur écoute et leur efficacité."
+        "title": "DG - Cotraf",
+        "message": "Grâce à KrestDev, nous disposons désormais d'une plateforme numérique moderne qui facilite la gestion de nos opérations de transport. Leur équipe a su comprendre nos besoins spécifiques et y répondre avec efficacité."
       },
       "deux": {
-        "title": "Responsable IT chez NovaTrans",
-        "message": "Professionnalisme, rigueur et réactivité. KrestDev nous a livré un outil métier parfaitement adapté à notre activité logistique."
+        "title": "Responsable communication - Fondation Jeanne Caroline",
+        "message": "La collaboration avec KrestDev a permis à notre fondation de renforcer sa présence en ligne. Le site développé reflète parfaitement nos valeurs et facilite la communication avec nos partenaires et bénéficiaires."
       },
       "trois": {
-        "title": "Consultante en stratégie digitale",
-        "message": "Un partenaire fiable avec une vraie sensibilité UX. Leurs conseils m’ont permis de repositionner mon offre efficacement."
+        "title": "Directeur - Saga Africa",
+        "message": "KrestDev a transformé notre vision en une réalité numérique. Le site web qu'ils ont conçu pour Saga Africa est à la fois esthétique et fonctionnel, offrant à nos clients une expérience en ligne agréable."
       },
       "quartre": {
-        "title": "CEO de StartNow",
-        "message": "Grâce à KrestDev, notre MVP a vu le jour en un temps record. L’approche agile et leur transparence ont fait toute la différence."
+        "title": " Chef des opérations - Le Carino Pizzeria",
+        "message": "Très satisfaits du site conçu par KrestDev : design fidèle à notre image, navigation fluide et commandes en ligne simplifiées. Une équipe professionnelle, rapide et à l’écoute de nos besoins."
       },
       "cinq": {
-        "title": "Responsable communication, ONG FemLead",
-        "message": "Une refonte web réussie, un design impactant, et un accompagnement humain. KrestDev a compris nos valeurs et les a sublimées."
+        "title": "Promotrice - Tyju Infosports",
+        "message": "Très satisfaite du site réalisé : design moderne, agréable et apprécié des utilisateurs. Malgré quelques ajustements après lancement, le résultat est positif. Une belle première expérience avec une équipe sérieuse et à l’écoute."
       }
     }
   },

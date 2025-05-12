@@ -62,24 +62,24 @@
     "description": "Collaborations that speak for themselves.",
     "Temoin": {
       "un": {
-        "title": "Founder of GreenFood CM",
-        "message": "The KrestDev team successfully transformed my vision into an intuitive and elegant e-commerce platform. I 100% recommend them for their attentiveness and efficiency."
+        "title": "CEO of Cotraf",
+        "message": "Thanks to KrestDev, we now have a modern digital platform that streamlines our transport operations management. Their team perfectly understood our specific needs and delivered efficient solutions."
       },
       "deux": {
-        "title": "IT Manager at NovaTrans",
-        "message": "Professionalism, precision, and responsiveness. KrestDev delivered a business tool perfectly tailored to our logistics operations."
+        "title": "Communication Manager - Jeanne Caroline Foundation",
+        "message": "Working with KrestDev has significantly boosted our online presence. The website they created accurately reflects our values and improves communication with partners and beneficiaries."
       },
       "trois": {
-        "title": "Digital Strategy Consultant",
-        "message": "A reliable partner with genuine UX sensibility. Their advice helped me effectively reposition my offering."
+        "title": "Director of Saga Africa",
+        "message": "KrestDev turned our vision into digital reality. The website they designed for Saga Africa combines aesthetics with functionality, providing our customers with an enjoyable online experience."
       },
       "quartre": {
-        "title": "CEO of StartNow",
-        "message": "Thanks to KrestDev, our MVP was launched in record time. Their agile approach and transparency made all the difference."
+        "title": "Operations Manager - Le Carino Pizzeria",
+        "message": "Highly satisfied with KrestDev's website: authentic brand representation, smooth navigation, and simplified online ordering. A professional team that delivered quickly while understanding our needs."
       },
       "cinq": {
-        "title": "Communications Manager, NGO FemLead",
-        "message": "A successful website redesign, impactful design, and human-centered support. KrestDev truly understood our values and elevated them."
+        "title": "Founder of Tyju Infosports",
+        "message": "Very pleased with the result: modern design that's visually appealing and user-friendly. Despite minor post-launch tweaks, the outcome is excellent. A great first experience with a professional and attentive team."
       }
     }
   },
@@ -252,7 +252,7 @@
         "quartre": "Development of a showcase website for COTRAF, a leader in industrial and petroleum transport in Cameroon. The site was designed to reflect the company’s values and expertise: reliability, professionalism, and commitment to its partners. The primary goal was to present the company, its history, services, and team through a modern, fluid, and accessible interface. This project underscores the importance of a professional online presence to bolster credibility in a strategic sector.",
         "cinq": "Creation of a modern, functional showcase website for Saga Africa, an Afro-fusion restaurant celebrating the culinary diversity of the African continent. The site embodies the warm and welcoming spirit of the venue while offering a smooth, intuitive user experience. Visitors can browse an interactive menu with photos and descriptions, place online orders, make secure payments, and reserve tables directly through the platform. Fully responsive, the site adapts to all devices (computers, tablets, smartphones), combining strong visual identity with practical features to meet customer needs and showcase the unique universe of Saga Africa.",
         "six": "Creation of an institutional showcase website for Krest Holding, a dynamic conglomerate operating in key sectors such as digital solutions, hospitality, architecture, civil engineering, wellness, and impound management. The site highlights the diversity and synergy of the group’s subsidiaries through an elegant, responsive, and structured interface. Each business area features a dedicated presentation, allowing visitors to explore Krest Holding’s expertise in digital services (via KrestDev), modern hospitality, sustainable architectural design, geotechnical studies, urban leisure (rooftop, fitness, spa), and municipal impound management. This project aims to strengthen the group’s brand image, showcase its commitments to innovation and performance, and facilitate connections with potential partners and clients.",
-        "sept":"Creation of a modern and functional showcase website for Le Carino Pizzeria, an Italo-Cameroonian brand located at the heart of the PlaYce Warda shopping center in Yaoundé. The website reflects the restaurant’s friendly and welcoming atmosphere while providing a smooth and intuitive user experience. It allows visitors to browse an interactive menu full of pizzas, burgers, pasta, artisanal ice cream, cocktails, and other specialties, order their meals online with free delivery on the first order, make secure payments, and book a table directly from the platform. Fully responsive, the website adapts to all devices (desktops, tablets, smartphones), combining a strong visual identity with practical features to meet customer needs and showcase the unique world of Le Carino Pizzeria."
+        "sept": "Creation of a modern and functional showcase website for Le Carino Pizzeria, an Italo-Cameroonian brand located at the heart of the PlaYce Warda shopping center in Yaoundé. The website reflects the restaurant’s friendly and welcoming atmosphere while providing a smooth and intuitive user experience. It allows visitors to browse an interactive menu full of pizzas, burgers, pasta, artisanal ice cream, cocktails, and other specialties, order their meals online with free delivery on the first order, make secure payments, and book a table directly from the platform. Fully responsive, the website adapts to all devices (desktops, tablets, smartphones), combining a strong visual identity with practical features to meet customer needs and showcase the unique world of Le Carino Pizzeria."
       }
     }
   }

@@ -214,31 +214,31 @@ export function useTestimonialData() {
   return [
     {
       image: "/images/aline.webp",
-      name: "Aline Ndjemba",
+      name: "Nadia Ngouaka",
       titre: t("un.title"),
       description: t("un.message"),
     },
     {
       image: "/images/steve.webp",
-      name: "Steve Mbarga",
+      name: "Paule",
       titre: t("deux.title"),
       description: t("deux.message"),
     },
     {
       image: "/images/juliette.webp",
-      name: "Juliette Nguimatsia",
+      name: "Francesco Feliziani",
       titre: t("trois.title"),
       description: t("trois.message"),
     },
     {
       image: "/images/eric.webp",
-      name: "Eric Fokou",
+      name: "Fokou Jocelyne",
       titre: t("quartre.title"),
       description: t("quartre.message"),
     },
     {
       image: "/images/mireille.webp",
-      name: "Mireille Essomba",
+      name: "Ngo Typhanie",
       titre: t("cinq.title"),
       description: t("cinq.message"),
     }

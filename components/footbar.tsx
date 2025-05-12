@@ -34,7 +34,7 @@ function Footbar() {
             <Link target='_blank' href={"https://www.facebook.com/share/16Dv6UE5J9/?mibextid=wwXIfr"}>
               <img src="/images/facebook.png" alt="Facebook" className='h-fit w-fit object-cover' />
             </Link>
-            <Link target='_blank' href={""}>
+            <Link target='_blank' href={"https://www.tiktok.com/@krestdev?_t=ZM-8wI18APFPpX&_r=1"}>
               <img src="/images/x.png" alt="X" className='h-fit w-fit object-cover' />
             </Link>
           </div>
