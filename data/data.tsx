@@ -1,32 +1,29 @@
 // aboutData.ts (ou dans le même fichier)
+import { iconBoxProps } from "@/components/Home/Scroll/icon-box";
 import { useTranslations } from "next-intl"
 
-export function useAboutData() {
-  const t = useTranslations("About")
-
-  return [
-    {
-      image: "/images/mission.png",
-      title: t("mission"),
-      content: t("missionDescription"),
-    },
-    {
-      image: "/images/expertise.png",
-      title: t("expertise"),
-      content: t("expertiseDescription"),
-    },
-    {
-      image: "/images/approche.png",
-      title: t("approche"),
-      content: t("approachDescription"),
-    },
-    {
-      image: "/images/valeur.png",
-      title: t("valeurs"),
-      content: t("valuesDescription"),
-    },
-  ]
-}
+export const aboutData:iconBoxProps[] = [
+  {
+    image: "/images/mission.png",
+    title: "mission",
+    description:"missionDescription",
+  },
+  {
+    image: "/images/expertise.png",
+    title:"expertise",
+    description:"expertiseDescription",
+  },
+  {
+    image: "/images/approche.png",
+    title:"approche",
+    description:"approachDescription",
+  },
+  {
+    image: "/images/valeur.png",
+    title:"valeurs",
+    description:"valuesDescription",
+  }
+] 
 
 export function useTeamData() {
   const t = useTranslations("Equipe");

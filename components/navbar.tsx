@@ -9,6 +9,8 @@ import { useRouter, usePathname } from 'next/navigation';
 import LocaleSwitcher from './locale-switcher';
 import { LucideMenu } from 'lucide-react';
 import { Menu } from './Menu';
+import { navigationLinks } from '@/data/navigation';
+import { cn } from '@/lib/utils';
 
 function Navbar() {
   const t = useTranslations('Navbar');
@@ -31,41 +33,12 @@ function Navbar() {
             <img src={'/images/logo.png'} alt={'Logo'} className='h-[32px] w-auto object-cover flex gap-2' />
           </Link>
         </div>
-        <span className='text-white hidden md:flex flex-row items-center gap-4'>
-          <Link
-            href={"/"}
-            className={`hover:underline font-medium ${isActive('/') ? 'text-[#3684DB]' : ''}`}
-          >
-            {t("accueil")}
-          </Link>
-          <Link
-            href={"/services"}
-            className={`hover:underline font-medium ${isActive('/services') ? 'text-[#3684DB]' : ''}`}
-          >
-            {t("services")}
-          </Link>
-          <Link
-            href={"/apropos"}
-            className={`hover:underline font-medium ${isActive('/apropos') ? 'text-[#3684DB]' : ''}`}
-          >
-            {t("about")}
-          </Link>
-          <Link
-            href={"/tarification"}
-            className={`hover:underline font-medium ${isActive('/tarification') ? 'text-[#3684DB]' : ''}`}
-          >
-            {t("tarif")}
-          </Link>
-          <Link
-            href={"/portfolio"}
-            className={`hover:underline font-medium ${isActive('/portfolio') ? 'text-[#3684DB]' : ''}`}
-          >
-            {t("porto")}
-          </Link>
+        <span className='hidden md:flex flex-row items-center gap-4'>
+          {navigationLinks.filter(x=>x.url!=="/contact").map(link=><Link key={link.url} href={link.url}><Button variant={"navlink"} className={cn(isActive(link.url) && "text-primary hover:text-primary/80", "cursor-pointer")}>{t(link.title)}</Button></Link>)}
         </span>
         <div className='flex items-center gap-3'>
           <LocaleSwitcher />
-          <Button onClick={() => router.push("/contacts")} className='h-[40px] hidden sm:flex'>{t("contact")}</Button>
+          {navigationLinks.filter(x=> x.url==="/contact").map(el=><Link key={el.url} href={el.url}><Button>{t(el.title)}</Button></Link>)}
         </div>
       </div>
     </div>

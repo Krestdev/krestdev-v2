@@ -76,9 +76,9 @@ export function AutoScroll({ item }: Props) {
         loop: true,
       }}
       setApi={setEmblaRef}
-      className="w-full"
+      className="w-full relative"
     >
-      <CarouselContent className="ml-11 max-w-screen">
+      <CarouselContent>
         {item.map((x, i) => (
           <CarouselItem
             key={i}
@@ -93,6 +93,8 @@ export function AutoScroll({ item }: Props) {
           </CarouselItem>
         ))}
       </CarouselContent>
+      <div className="absolute left-0 top-0 z-20 w-1/5 h-full bg-gradient-to-r from-white to-transparent"/>
+      <div className="absolute right-0 top-0 z-20 w-1/5 h-full bg-gradient-to-l from-white to-transparent"/>
     </Carousel>
   )
 }

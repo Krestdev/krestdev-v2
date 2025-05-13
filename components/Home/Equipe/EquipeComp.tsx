@@ -34,7 +34,7 @@ const EquipeComp = ({ nom, poste, image }: Props) => {
       {/* Contenu texte au-dessus */}
       <div className="flex flex-col gap-1 z-10 relative">
         <p className="font-semibold text-[20px] text-white leading-[100%] tracking-[-3%]">{nom}</p>
-        <p className="text-[16px] italic font-mono text-[#D9EBFF]">{poste}</p>
+        <p className="text-base cursive-text text-subtitle-blue">{poste}</p>
       </div>
     </div>
   )

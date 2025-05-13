@@ -23,7 +23,7 @@ export const TextReveal: FC<TextRevealProps> = ({ text, className, textClassName
     <div ref={targetRef} className={className}>
       <div className="flex items-center relative px-7 md:px-0">
         <p
-          className={"flex flex-wrap font-medium text-slate-950/20 dark:text-white/20 md:py-8 md:pl-[60px] text-[28px] max-w-[844px] leading-[100%] tracking-[-3%]"}
+          className={"flex flex-wrap font-medium text-slate-950/20 mx-auto text-[18px] sm:text-[24px] lg:text-[28px] max-w-[844px] leading-[120%] tracking-[-0.03em]"}
         >
           {words.map((word, i) => {
             const start = i / words.length;
@@ -55,7 +55,7 @@ const Word: FC<WordProps> = ({ children, progress, range }) => {
   const y = useTransform(progress, range, [20, 0]); // Words move up slightly as they appear
 
   return (
-    <span className="relative mx-1 lg:mx-2.5">
+    <span className="relative mx-1 lg:mx-1.5">
       {/* Faded Background Text */}
       <span className="absolute opacity-30">{children}</span>
       {/* Revealed Text */}

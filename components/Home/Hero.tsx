@@ -1,45 +1,48 @@
-"use client"
-
-import React from 'react';
-import { useTranslations } from 'next-intl';
-import { Button } from '../ui/button';
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import React from "react";
+import { useTranslations } from "next-intl";
+import { Button } from "../ui/button";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Hero = () => {
-    const t = useTranslations('Hero');
-    const router = useRouter()
+  const t = useTranslations("Hero");
 
-    return (
-        <div className='w-full h-[629px] md:mb-[145px] lg:mb-10 lg:h-[1080px] xl:h-[1256px] flex flex-col items-start md:items-center'>
-            <div
-                className='w-full h-[80%] bg-cover bg-no-repeat flex justify-center items-start md:items-center '
-                style={{
-                    backgroundImage: `url('/images/hero.png')`,
-                    backgroundSize: 'cover',
-                    overflow: 'visible',
-                }}
-            >
-                <div className='flex flex-col items-center justify-center gap-[40px] w-full px-7'>
-                    <div className='flex flex-col items-center justify-center w-full gap-5 text-center pt-10'>
-                        <h1 className='text-white sm:w-[668px] md:w-[735px]'>
-                            {t("title1")} <span className='font-mono font-normal'>{` ${t("title2")}`}</span>
-                        </h1>
-                        <p className='text-[#D9EBFF] w-[317px] md:w-[640px]'>{t("description")}</p>
-                        <div className='flex flex-col gap-4 sm:flex-row sm:gap-7 w-full md:w-fit'>
-                            <Button onClick={() => router.push("/services")} className='text-black bg-white h-[60px]'>{t("services")}</Button>
-                            <Button onClick={() => router.push("/portfolio")} className='h-[60px]'>{t("portfolio")}</Button>
-                        </div>
-                    </div>
-                    <img
-                        src='/images/projet.png'
-                        alt='projet'
-                        className='object-center max-w-[1400px] w-[80%] -mb-50 md:-mb-60 lg:-mb-65'
-                    />
-                </div>
+  return (
+    <section className="w-full py-12 sm:py-16 md:py-20 lg:py-24 xl:py-[120px] xl:pt-[180px] relative">
+      <img
+        src="/images/hero.webp"
+        alt="hero"
+        className="absolute top-0 left-0 -z-10 w-full h-full max-h-full sm:max-h-[80%] object-cover"
+      />
+      <div className="w-full max-w-[1400px] mx-auto px-7 flex flex-col items-center justify-center gap-10">
+        <div className="flex flex-col items-center justify-center gap-5 w-full">
+            <h1 className="text-white max-w-[735px]">
+              {t("title1")}
+              <span className="cursive-text">{t("title2")}</span>
+            </h1>
+            <p className="hero-subtitle">
+              {t("description")}
+            </p>
+            <div className="w-full flex flex-wrap gap-4 items-center justify-center sm:gap-7">
+              <Link href={"/services"}>
+                <Button size={"hero"} variant={"white"}>
+                  {t("services")}
+                </Button>
+              </Link>
+              <Link href={"/portofolio"}>
+                <Button size={"hero"}>{t("portfolio")}</Button>
+              </Link>
             </div>
         </div>
-    );
+          <img
+            src="/images/hero-image.webp"
+            alt="projet"
+            className="w-full h-auto"
+          />
+      </div>
+    </section>
+  );
 };
 
 export default Hero;

@@ -15,9 +15,9 @@ const Temoignage = () => {
     const t = useTranslations("Temoignages");
     const temoignages = useTestimonialData()
     return (
-        <div className='flex flex-col py-[60px] md:py-[96px] gap-10 items-center'>
-            <div className='flex flex-col items-center gap-2 px-7 max-w-[1280px]'>
-                <h2 className='text-center w-full'>
+        <div className='containerBloc flex flex-col gap-10 items-center'>
+            <div className='flex flex-col items-center gap-2 px-7 max-w-[844px]'>
+                <h2 className='text-center'>
                     {t("title1")} <span className='font-mono font-normal'>{` ${t("title2")}`}</span>
                 </h2>
                 <p className='subtitle'>{t("description")}</p>

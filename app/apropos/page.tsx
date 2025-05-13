@@ -3,7 +3,7 @@
 import Images from '@/components/Apropos/Images'
 import Boost from '@/components/Home/Contact/boost'
 import Equipe from '@/components/Home/Equipe/Equipe'
-import Section from '@/components/Home/Scroll/Section'
+import Section from '@/components/Home/Scroll/icon-box'
 import Statistique from '@/components/Home/Scroll/Statistique'
 import { HorizontalScrollCarousel } from '@/components/horizontal-scroll'
 import { TextReveal } from '@/components/ui/text-reveal'

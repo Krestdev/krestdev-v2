@@ -17,7 +17,7 @@ const Equipe = () => {
             }}>
             <div className='flex flex-col items-center gap-2 px-7 max-w-[1280px] text-center'>
                 <h2 className='text-white max-w-[489px] w-full'>
-                    {t("title1")} <span className='font-mono font-normal'>{` ${t("title2")}`}</span>
+                    {t("title1")} <span className='cursive-text'>{` ${t("title2")}`}</span>
                 </h2>
                 <p className='max-w-[640px] text-[#D9EBFF] subtitle text-[16px]'>{t("description")}</p>
             </div>
