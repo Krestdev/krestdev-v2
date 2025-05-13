@@ -1,5 +1,259 @@
 {
-    "HomePage": {
-      "title": "Hello world!"
+  "Navbar": {
+    "accueil": "Home",
+    "services": "Services",
+    "about": "About",
+    "tarif": "Pricing",
+    "porto": "Portfolio",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title1": "Transform your ideas into ",
+    "title2": "powerful digital solutions.",
+    "description": "Agency specialized in web development, custom design, and marketing strategy to propel your business",
+    "services": "Discover our services",
+    "portfolio": "View our Portfolio"
+  },
+  "About": {
+    "description": "At KrestDev, we transform your ambitions into concrete success. From the first idea to the final launch, our creative and technical team puts its expertise at the service of your growth. Innovation, performance, and impact are at the heart of everything we do.",
+    "mission": "Our mission",
+    "missionDescription": "Transform your ideas into powerful and sustainable digital solutions. We accompany you at every step, from strategy to implementation, to create a real impact.",
+    "expertise": "Our expertise",
+    "expertiseDescription": "From website and application creation to the implementation of tailor-made digital strategies, our team of experts combines creativity and technology to meet your most ambitious needs.",
+    "approche": "Our approach",
+    "approachDescription": "At KrestDev, every collaboration is based on active listening and co-construction. We believe that constant dialogue is the key to exceeding your expectations and ensuring your satisfaction.",
+    "valeurs": "Our values",
+    "valuesDescription": "We believe that every project is an opportunity to push the boundaries of digital. We cultivate innovation, pursue excellence, and place human relationships at the heart of our achievements."
+  },
+  "Statistics": {
+    "title1": "Solutions that transform",
+    "title2": "your ambitions into successes",
+    "description": "At KrestDev, we combine technical expertise and creativity to deliver tailor-made solutions. Every project is an opportunity to push the limits of digital innovation.",
+    "livre": "Projects delivered",
+    "clients": "Client satisfaction",
+    "annee": "Years of experience"
+  },
+  "Domain": {
+    "title1": "Our areas",
+    "title2": "of expertise",
+    "description": "We specialize in web development, UI/UX design, digital marketing, and brand strategy. Our team of experts is ready to transform your ideas.",
+    "web": "High-Performance Websites",
+    "webDescription": "Development of showcase sites, e-commerce, and modern, high-performance web applications.",
+    "design": "UI/UX Design",
+    "designDescription": "Intuitive interfaces and memorable user experiences to capture your audience.",
+    "marketing": "Digital Marketing",
+    "marketingDescription": "Attract, engage, and retain customers with strategic and optimized digital campaigns.",
+    "mobileWeb": "Custom Web & Mobile Applications",
+    "mobileWebDescription": "Our team transforms your ideas into powerful digital tools, designed to support your growth and set you apart.",
+    "branding": "Branding & Visual Identity",
+    "brandingDescription": "Create a strong and memorable brand with a design that inspires trust and loyalty.",
+    "reseaux": "Networks & Infrastructure",
+    "reseauxDescription": "Setup and securing of corporate networks."
+  },
+  "Realisation": {
+    "title1": "Our flagship",
+    "title2": "projects",
+    "description": "Discover some recent projects carried out with passion for our clients in various sectors.",
+    "seeMore": "View all our projects"
+  },
+  "Temoignages": {
+    "title1": "Client",
+    "title2": "testimonials",
+    "description": "Collaborations that speak for themselves.",
+    "Temoin": {
+      "un": {
+        "title": "CEO of Cotraf",
+        "message": "Thanks to KrestDev, we now have a modern digital platform that streamlines our transport operations management. Their team perfectly understood our specific needs and delivered efficient solutions."
+      },
+      "deux": {
+        "title": "Communication Manager - Jeanne Caroline Foundation",
+        "message": "Working with KrestDev has significantly boosted our online presence. The website they created accurately reflects our values and improves communication with partners and beneficiaries."
+      },
+      "trois": {
+        "title": "Director of Saga Africa",
+        "message": "KrestDev turned our vision into digital reality. The website they designed for Saga Africa combines aesthetics with functionality, providing our customers with an enjoyable online experience."
+      },
+      "quartre": {
+        "title": "Operations Manager - Le Carino Pizzeria",
+        "message": "Highly satisfied with KrestDev's website: authentic brand representation, smooth navigation, and simplified online ordering. A professional team that delivered quickly while understanding our needs."
+      },
+      "cinq": {
+        "title": "Founder of Tyju Infosports",
+        "message": "Very pleased with the result: modern design that's visually appealing and user-friendly. Despite minor post-launch tweaks, the outcome is excellent. A great first experience with a professional and attentive team."
+      }
+    }
+  },
+  "Equipe": {
+    "title1": "The",
+    "title2": "KrestDev Team",
+    "description": "A passionate team bringing together designers, developers, strategists, and marketers to make your project shine.",
+    "chef": "Project Manager",
+    "backend": "Backend Developer",
+    "frontend": "Frontend Developer",
+    "graphic": "Graphic Designer"
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "Question1": {
+      "title": "What is the delivery time for a website?",
+      "content": "The delivery time for a website depends on its complexity. Generally, we deliver a showcase site in 2 to 4 weeks and an e-commerce site in 4 to 8 weeks."
+    },
+    "Question2": {
+      "title": "How does a project start with you?",
+      "content": "We start with a discovery phase to understand your needs. Then, we move on to design, development, and finally testing before going live."
+    },
+    "Question3": {
+      "title": "Do you offer maintenance packages?",
+      "content": "Yes, we offer several maintenance packages tailored to your needs. This includes content updates, security, and technical support."
+    },
+    "Question4": {
+      "title": "Can I evolve my project after delivery?",
+      "content": "Absolutely! We offer post-launch follow-up to ensure everything works as expected and to make adjustments if necessary."
+    },
+    "Question5": {
+      "title": "Do you work with international companies?",
+      "content": "Yes, we have clients in several countries. We are used to working remotely and managing time zone differences."
+    }
+  },
+  "Boost": {
+    "title1": "Want to boost your",
+    "title2": "digital presence?",
+    "description": "Every solution we create is designed to boost your visibility and performance.",
+    "button": "Contact Us"
+  },
+  "Footer": {
+    "description": "Your Strategic Digital Partner. Based in Douala, we transform your digital ambitions into measurable successes.",
+    "email": "Email",
+    "phone": "Phone Number",
+    "address": "Address",
+    "copyright": "© 2025 Copyright KrestDev - Powered by KrestDev"
+  },
+  "Services": {
+    "title": "Our Services",
+    "description": "Tailor-made digital solutions to propel your brand",
+    "Process": {
+      "title": "Our process",
+      "description": "Every project we initiate follows a methodology to ensure its completion.",
+      "besoin": {
+        "title": "Understanding the need",
+        "description": "We start with an in-depth exchange to understand your objectives, your users, your environment, and the specific issues to be resolved."
+      },
+      "solution": {
+        "title": "Co-creation of the solution",
+        "description": "Together, we define the best strategy to adopt—design, functionalities, messages, technologies."
+      },
+      "developpement": {
+        "title": "Production & development",
+        "description": "Whether it's a website, an app, or a marketing plan, we move to realization with agility, transparency, and rigor."
+      },
+      "test": {
+        "title": "Testing & adjustments",
+        "description": "We check, test, and refine every detail to ensure optimal quality. Responsive, performance, security, accessibility… everything is validated."
+      },
+      "suivi": {
+        "title": "Launch & follow-up",
+        "description": "The project is launched or delivered according to the most demanding standards. We remain available to provide support, maintenance, or future updates."
+      }
+    }
+  },
+  "Apropos": {
+    "title": "About",
+    "description": "Everything you need to know about KrestDev"
+  },
+  "Tarification": {
+    "title": "Pricing",
+    "description": "Solutions for every project, a transparent and flexible approach.",
+    "Grid": {
+      "montantC": "Starting from",
+      "montantI": "Custom quote",
+      "Start": {
+        "title": "Start",
+        "description": "Ideal for freelancers, small businesses, or MVPs.",
+        "offres": {
+          "un": "Showcase site or landing page",
+          "deux": "Simple visual identity (logo, palette)",
+          "trois": "Quick launch",
+          "quatre": "Basic maintenance"
+        },
+        "sub": "Perfect for: getting started quickly with a professional base."
+      },
+      "Boost": {
+        "title": "Boost",
+        "description": "Designed for growing businesses.",
+        "offres": {
+          "un": "Dynamic application or website",
+          "deux": "Complete branding (logo, graphic charter, templates)",
+          "trois": "SEO optimization + social media",
+          "quatre": "API / CMS connections",
+          "cinq": "Support & updates for 1 month"
+        },
+        "sub": "For brands that want more than just a simple site."
+      },
+      "Scale": {
+        "title": "Scale",
+        "description": "Custom, for ambitious or complex projects.",
+        "offres": {
+          "un": "In-depth digital and UX strategy",
+          "deux": "Custom web and mobile development",
+          "trois": "Interconnections (ERP, CRM, third-party systems)",
+          "quatre": "Advanced security, performance & scalability",
+          "cinq": "Agile support over several months"
+        },
+        "sub": "Perfect for: getting started quickly with a professional base."
+      },
+      "Support": {
+        "title": "Support",
+        "description": "To stay performant and secure over time.",
+        "offres": {
+          "un": "Backups, updates, fixes",
+          "deux": "Performance monitoring",
+          "trois": "Quick interventions (via technical support)",
+          "quatre": "Monthly reports"
+        },
+        "sub": "Optional with every package."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "An idea, a need, a question? We are here to support you at every step.",
+    "Form": {
+      "title": "Contact form",
+      "description": "Leave us a message, we will respond within 24 hours.",
+      "nom": "Name",
+      "email": "Email address",
+      "tel": "Phone number",
+      "tel2": "Phone",
+      "objet": "Subject",
+      "objetLabel": "Message subject",
+      "message": "Message",
+      "messageLabel": "Describe your message",
+      "localisation": "Location",
+      "submit": "Send message",
+      "submitting": "Submitting",
+      "confirm": "Email sent successfully",
+      "success": "Message sent successfully",
+      "error": "An error occurred while sending"
+    }
+  },
+  "Portfolio": {
+    "title": "Portfolio",
+    "description": "View the table of our achievements",
+    "Projet": {
+      "title": "About the project",
+      "description": "Project created by Krestdev",
+      "client": "Client",
+      "service": "Service",
+      "lien": "View the web page",
+      "desc": {
+        "un": "Development of a modern, responsive website for CREACONSULT, an engineering and project management firm founded in 2006. The site highlights their expertise in institutional, commercial, and industrial projects, as well as their commitment to quality and environmental standards (ISO 9001 & 14001 certifications). The interface simplifies communication with project owners and investors, reflecting the company's values of excellence, innovation, and ethics.",
+        "deux": "Development of a web application dedicated to real-time sports information. Tyju Info Sport offers an interactive and dynamic interface allowing users to access results, news, and detailed statistics across various sports. The app is designed for a seamless and intuitive experience, with advanced features like personalized notifications and performance tracking. The project integrates efficient sports data management to deliver up-to-date and relevant information, emphasizing speed and accuracy of content.",
+        "trois": "This showcase website pays tribute to Jeanne Caroline Mfege, a woman of faith and courage whose battle with cancer inspired the creation of a humanitarian foundation. Through a sober yet warm interface, the site presents the foundation’s mission: improving healthcare access for vulnerable populations in Cameroon. It highlights Jeanne Caroline’s legacy of solidarity, dignity, and spirituality while offering visitors a space for information, awareness, and engagement with the foundation’s initiatives.",
+        "quartre": "Development of a showcase website for COTRAF, a leader in industrial and petroleum transport in Cameroon. The site was designed to reflect the company’s values and expertise: reliability, professionalism, and commitment to its partners. The primary goal was to present the company, its history, services, and team through a modern, fluid, and accessible interface. This project underscores the importance of a professional online presence to bolster credibility in a strategic sector.",
+        "cinq": "Creation of a modern, functional showcase website for Saga Africa, an Afro-fusion restaurant celebrating the culinary diversity of the African continent. The site embodies the warm and welcoming spirit of the venue while offering a smooth, intuitive user experience. Visitors can browse an interactive menu with photos and descriptions, place online orders, make secure payments, and reserve tables directly through the platform. Fully responsive, the site adapts to all devices (computers, tablets, smartphones), combining strong visual identity with practical features to meet customer needs and showcase the unique universe of Saga Africa.",
+        "six": "Creation of an institutional showcase website for Krest Holding, a dynamic conglomerate operating in key sectors such as digital solutions, hospitality, architecture, civil engineering, wellness, and impound management. The site highlights the diversity and synergy of the group’s subsidiaries through an elegant, responsive, and structured interface. Each business area features a dedicated presentation, allowing visitors to explore Krest Holding’s expertise in digital services (via KrestDev), modern hospitality, sustainable architectural design, geotechnical studies, urban leisure (rooftop, fitness, spa), and municipal impound management. This project aims to strengthen the group’s brand image, showcase its commitments to innovation and performance, and facilitate connections with potential partners and clients.",
+        "sept": "Creation of a modern and functional showcase website for Le Carino Pizzeria, an Italo-Cameroonian brand located at the heart of the PlaYce Warda shopping center in Yaoundé. The website reflects the restaurant’s friendly and welcoming atmosphere while providing a smooth and intuitive user experience. It allows visitors to browse an interactive menu full of pizzas, burgers, pasta, artisanal ice cream, cocktails, and other specialties, order their meals online with free delivery on the first order, make secure payments, and book a table directly from the platform. Fully responsive, the website adapts to all devices (desktops, tablets, smartphones), combining a strong visual identity with practical features to meet customer needs and showcase the unique world of Le Carino Pizzeria."
+      }
     }
   }
+}

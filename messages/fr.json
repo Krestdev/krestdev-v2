@@ -1,5 +1,259 @@
 {
-    "HomePage": {
-      "title": "Bonjour le Monde!"
+  "Navbar": {
+    "accueil": "Accueil",
+    "services": "Services",
+    "about": "À propos",
+    "tarif": "Tarification",
+    "porto": "Portfolio",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title1": "Transformez vos idées en ",
+    "title2": "Solutions digitales puissantes.",
+    "description": "Agence spécialisée en développement web, design sur mesure et stratégie marketing pour propulser votre entreprise",
+    "services": "Découvrez nos services",
+    "portfolio": "Consulter notre Portfolio"
+  },
+  "About": {
+    "description": "Chez KrestDev, nous transformons vos ambitions en succès concrets. De la première idée au lancement final, notre équipe créative et technique met son expertise au service de votre croissance. Innovation, performance et impact sont au cœur de tout ce que nous réalisons.",
+    "mission": "Notre mission",
+    "missionDescription": "Transformer vos idées en solutions digitales performantes et durables. Nous vous accompagnons à chaque étape, de la stratégie à la mise en œuvre, pour créer un impact réel",
+    "expertise": "Notre expertise",
+    "expertiseDescription": "De la création de site web et d’applications à la mise en place de stratégies digitale sur-mesure, notre équipe d’experts allie créativité et technologie pour répondre à vos besoins les plus ambitieux.",
+    "approche": "Notre approche",
+    "approachDescription": "Chez KrestDev, chaque collaboration repose sur l’écoute active et la co-construction. Nous croyons qu’un dialogue constant est la clé pour dépasser vos attentes et assurer votre satisfaction.",
+    "valeurs": "Nos valeurs",
+    "valuesDescription": "Nous croyons que chaque projet est une opportunité de repousser les limites du digital. Nous cultivons l’innovation, poursuivons l’excellence et plaçons la relation humaine au cœur de nos réalisations."
+  },
+  "Statistics": {
+    "title1": "Des solutions qui transforment",
+    "title2": "vos ambitions en réussites",
+    "description": "Chez KrestDev, nous combinons expertise technique et créativité pour livrer des solutions sur-mesure. Chaque projet est l'occasion de repousser les limites de l'innovation digitale.",
+    "livre": "Projets livrés",
+    "clients": "Satisfaction clients",
+    "annee": "Années d'expériences"
+  },
+  "Domain": {
+    "title1": "Nos domaines",
+    "title2": " d'expertise",
+    "description": "Nous sommes spécialisés dans le développement web, le design UI/UX, le marketing digital et la stratégie de marque. Notre équipe d'experts est prête à transformer vos idées",
+    "web": "Sites Web Haute Performance",
+    "webDescription": "Développement de sites vitrines, e-commerce et applications web modernes et performants.",
+    "design": "UI/UX Design",
+    "designDescription": "Interfaces intuitives et expériences utilisateur mémorables pour capter votre audience.",
+    "marketing": "Marketing Digital",
+    "marketingDescription": "Attirez, engagez et fidélisez grâce à des campagnes digitales stratégiques et optimisées.",
+    "mobileWeb": "Applications Web & Mobiles Sur-Mesure",
+    "mobileWebDescription": "Notre équipe transforme vos idées en outils digitaux puissants, pensés pour accompagner votre croissance et marquer votre différence.",
+    "branding": "Branding & Identité Visuelle",
+    "brandingDescription": "Créez une marque forte et mémorable avec un design qui inspire confiance et fidélité.",
+    "reseaux": "Réseaux & Infrastructures",
+    "reseauxDescription": "Mise en place et sécurisation des réseaux d'entreprise"
+  },
+  "Realisation": {
+    "title1": "Nos réalisations",
+    "title2": "phares",
+    "description": "Découvrez quelques projets récents menés avec passion pour nos clients dans divers secteurs.",
+    "seeMore": "Voir tous nos projets"
+  },
+  "Temoignages": {
+    "title1": "Témoignage",
+    "title2": "clients",
+    "description": "Des collaborations qui parlent d’elles-mêmes",
+    "Temoin": {
+      "un": {
+        "title": "DG - Cotraf",
+        "message": "Grâce à KrestDev, nous disposons désormais d'une plateforme numérique moderne qui facilite la gestion de nos opérations de transport. Leur équipe a su comprendre nos besoins spécifiques et y répondre avec efficacité."
+      },
+      "deux": {
+        "title": "Responsable communication - Fondation Jeanne Caroline",
+        "message": "La collaboration avec KrestDev a permis à notre fondation de renforcer sa présence en ligne. Le site développé reflète parfaitement nos valeurs et facilite la communication avec nos partenaires et bénéficiaires."
+      },
+      "trois": {
+        "title": "Directeur - Saga Africa",
+        "message": "KrestDev a transformé notre vision en une réalité numérique. Le site web qu'ils ont conçu pour Saga Africa est à la fois esthétique et fonctionnel, offrant à nos clients une expérience en ligne agréable."
+      },
+      "quartre": {
+        "title": " Chef des opérations - Le Carino Pizzeria",
+        "message": "Très satisfaits du site conçu par KrestDev : design fidèle à notre image, navigation fluide et commandes en ligne simplifiées. Une équipe professionnelle, rapide et à l’écoute de nos besoins."
+      },
+      "cinq": {
+        "title": "Promotrice - Tyju Infosports",
+        "message": "Très satisfaite du site réalisé : design moderne, agréable et apprécié des utilisateurs. Malgré quelques ajustements après lancement, le résultat est positif. Une belle première expérience avec une équipe sérieuse et à l’écoute."
+      }
+    }
+  },
+  "Equipe": {
+    "title1": "L’équipe",
+    "title2": "KrestDev",
+    "description": "Une équipe passionnée réunissant designers, développeurs, stratèges et marketeurs pour faire rayonner votre projet.",
+    "chef": "Chef de projet",
+    "backend": "Développeur Backend",
+    "frontend": "Développeur Frontend",
+    "graphic": "Designer Graphique"
+  },
+  "FAQ": {
+    "title": "Questions Fréquemment Posées",
+    "Question1": {
+      "title": "Quels délais pour livrer un site web ?",
+      "content": "Le délai de livraison d’un site web dépend de sa complexité. En général, nous livrons un site vitrine en 2 à 4 semaines et un site e-commerce en 4 à 8 semaines."
+    },
+    "Question2": {
+      "title": "Comment démarre un projet avec vous ?",
+      "content": "Nous commençons par une phase de découverte pour comprendre vos besoins. Ensuite, nous passons à la conception, au développement et enfin aux tests avant la mise en ligne."
+    },
+    "Question3": {
+      "title": "Proposez-vous des forfaits de maintenance ?",
+      "content": "Oui, nous proposons plusieurs forfaits de maintenance adaptés à vos besoins. Cela inclut la mise à jour du contenu, la sécurité et le support technique."
+    },
+    "Question4": {
+      "title": "Puis-je faire évoluer mon projet après livraison ?",
+      "content": "Absolument ! Nous offrons un suivi post-lancement pour nous assurer que tout fonctionne comme prévu et pour apporter des ajustements si nécessaire."
+    },
+    "Question5": {
+      "title": "Travaillez-vous avec des entreprises à l'international ?",
+      "content": "Oui, nous avons des clients dans plusieurs pays. Nous sommes habitués à travailler à distance et à gérer les différences de fuseaux horaires."
+    }
+  },
+  "Boost": {
+    "title1": "Envie de booster votre",
+    "title2": "présence digitale ?",
+    "description": "Chaque solution que nous créons est pensée pour booster votre visibilité et votre performance.",
+    "button": "Nous Contacter"
+  },
+  "Footer": {
+    "description": "Votre Partenaire Digital Stratégique. Basés à Douala, nous transformons vos ambitions digitales en réussites mesurables.",
+    "email": "Email",
+    "phone": "Numéro de Téléphone",
+    "address": "Adresse",
+    "copyright": "© 2025 Copyright KrestDev - Propulsé par KrestDev "
+  },
+  "Services": {
+    "title": "Nos Services",
+    "description": "Des solutions digitales sur-mesure pour propulser votre marque",
+    "Process": {
+      "title": "Notre processus",
+      "description": "Chaque projet que nous initions suis une méthodologie visant à garantir sa réalisation",
+      "besoin": {
+        "title": "Compréhension du besoin",
+        "description": "Nous commençons par un échange approfondi pour comprendre vos objectifs, vos utilisateurs, votre environnement et les problématiques spécifiques à résoudre."
+      },
+      "solution": {
+        "title": "Co-création de la solution",
+        "description": "Nous définissons ensemble la meilleure stratégie à adopter — design, fonctionnalités, messages, technologies."
+      },
+      "developpement": {
+        "title": "Production & développement",
+        "description": "Qu’il s’agisse d’un site, d’une app ou d’un plan marketing, nous passons à la réalisation avec agilité, transparence et rigueur."
+      },
+      "test": {
+        "title": "Tests & ajustements",
+        "description": "Nous vérifions, testons et peaufinons chaque détail pour garantir une qualité optimale. Responsive, performance, sécurité, accessibilité… tout est validé."
+      },
+      "suivi": {
+        "title": "Lancement & suivi",
+        "description": "Le projet est mis en ligne ou livré selon les standards les plus exigeants. Nous restons disponibles pour assurer le support, la maintenance ou les évolutions futures."
+      }
+    }
+  },
+  "Apropos": {
+    "title": "À Propos",
+    "description": "Tout ce qu’il faut savoir sur KrestDev"
+  },
+  "Tarification": {
+    "title": "Tarification",
+    "description": "Des solutions pour chaque projet, une approche transparente et flexible.",
+    "Grid": {
+      "montantC": "À partir de",
+      "montantI": "Tarif sur devis",
+      "Start": {
+        "title": "Start",
+        "description": "Idéal pour les indépendants, petites structures ou MVP.",
+        "offres": {
+          "un": "Site vitrine ou landing page",
+          "deux": "Identité visuelle simple (logo, palette)",
+          "trois": "Mise en ligne rapide",
+          "quatre": "Maintenance basique"
+        },
+        "sub": "Parfait pour : se lancer vite avec une base professionnelle."
+      },
+      "Boost": {
+        "title": "Boost",
+        "description": "Pensé pour les entreprises en croissance.",
+        "offres": {
+          "un": "Application ou site web dynamique",
+          "deux": "Branding complet (logo, charte graphique, templates)",
+          "trois": "Optimisation SEO + réseaux sociaux",
+          "quatre": "Connexions API / CMS",
+          "cinq": "Support & mises à jour pendant 1 mois"
+        },
+        "sub": "Pour les marques qui veulent plus qu’un simple site."
+      },
+      "Scale": {
+        "title": "Scale",
+        "description": "Sur-mesure, pour les projets ambitieux ou complexes.",
+        "offres": {
+          "un": "Stratégie digitale et UX approfondie",
+          "deux": "Développement web et mobile sur-mesure",
+          "trois": "Interconnexions (ERP, CRM, systèmes tiers)",
+          "quatre": "Sécurité avancée, performances & scalabilité",
+          "cinq": "Support agile sur plusieurs mois"
+        },
+        "sub": "Parfait pour : se lancer vite avec une base professionnelle."
+      },
+      "Support": {
+        "title": "Support",
+        "description": "Pour rester performant et sécurisé dans le temps.",
+        "offres": {
+          "un": "Sauvegardes, mises à jour, corrections",
+          "deux": "Surveillance de performances",
+          "trois": "Interventions rapides (via support technique)",
+          "quatre": "Rapports mensuels"
+        },
+        "sub": "En option avec chaque formule."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "Une idée, un besoin, une question ? Nous sommes là pour vous accompagner à chaque étape.",
+    "Form": {
+      "title": "Formulaire de contact",
+      "description": "Laissez-nous un message, nous vous répondrons sous 24h.",
+      "nom": "Nom",
+      "email": "Adresse mail",
+      "tel": "Numéro de téléphone",
+      "tel2": "Téléphone",
+      "objet": "Objet",
+      "objetLabel": "Objet du message",
+      "message": "Message",
+      "messageLabel": "Décrivez-nous votre message",
+      "localisation": "Localisation",
+      "submit": "Envoyer le message",
+      "submitting": "En cours d'envoie",
+      "confirm": "Mail envoyé avec success",
+      "success": "Message envoyé avec succès",
+      "error": "Erreur lors de l'envoi"
+    }
+  },
+  "Portfolio": {
+    "title": "Portfolio",
+    "description": "Consultez le tableau de nos réalisations",
+    "Projet": {
+      "title": "À Propos du projet",
+      "description": "Projet realisé par Krestdev",
+      "client": "Client",
+      "service": "Service",
+      "lien": "Consulter la page web",
+      "desc": {
+        "un": "Réalisation d’un site web moderne et responsive pour CREACONSULT, cabinet d’ingénierie et de gestion de projets fondé en 2006. Le site met en valeur leur expertise en projets institutionnels, commerciaux et industriels, ainsi que leur engagement en matière de qualité et d’environnement (certifications ISO 9001 & 14001). L’interface simplifie la communication avec les maîtres d’ouvrage et investisseurs, reflétant les valeurs d’excellence, d’innovation et d’éthique de l’entreprise.",
+        "deux": "Développement d'une application web dédiée à la diffusion d'informations sportives en temps réel. Tyju Info Sport propose une interface interactive et dynamique permettant aux utilisateurs d'accéder à des résultats, des actualités et des statistiques détaillées sur différents sports. L'application est conçue pour offrir une expérience fluide et intuitive, avec des fonctionnalités avancées comme la personnalisation des notifications et le suivi des performances sportives. Le projet intègre une gestion efficace des données sportives pour offrir des informations actualisées et pertinentes, en mettant l'accent sur la rapidité et la précision des contenus.",
+        "trois": "Ce site vitrine rend hommage à Jeanne Caroline Mfege, une femme de foi et de courage, dont le combat contre le cancer a inspiré la création d’une fondation humanitaire. À travers une interface sobre et chaleureuse, le site présente la mission de la fondation : améliorer l'accès aux soins de santé pour les populations vulnérables au Cameroun. Il met en avant l’héritage de solidarité, de dignité et de spiritualité de Jeanne Caroline, tout en offrant aux visiteurs un espace d’information, de sensibilisation et de mobilisation autour des actions de la fondation.",
+        "quartre": "Réalisation d’un site vitrine pour COTRAF, une entreprise leader dans le transport industriel et pétrolier au Cameroun. Ce site a été conçu pour refléter les valeurs et l’expertise de la société : fiabilité, professionnalisme et engagement envers ses partenaires. L’objectif principal était de présenter l’entreprise, son histoire, ses services, et son équipe à travers une interface moderne, fluide et accessible. Ce projet met en valeur l’importance d’une présence en ligne professionnelle pour renforcer la crédibilité d’une entreprise dans un secteur stratégique.",
+        "cinq": "Création d’un site vitrine moderne et fonctionnel pour Saga Africa, un restaurant afro-fusion qui met à l’honneur la diversité culinaire du continent africain. Le site incarne l’esprit chaleureux et accueillant du lieu, tout en offrant une expérience utilisateur fluide et intuitive. Il permet aux visiteurs de consulter un menu interactif avec photos et descriptions, de commander leurs plats en ligne, de payer de manière sécurisée et de réserver une table directement depuis la plateforme. Entièrement responsive, le site s’adapte à tous les supports (ordinateurs, tablettes, smartphones), combinant ainsi une forte identité visuelle avec des fonctionnalités pratiques pour répondre aux besoins des clients et valoriser l’univers unique de Saga Africa.",
+        "six": "Création d’un site vitrine institutionnel pour Krest Holding, un conglomérat dynamique opérant dans des secteurs clés tels que les solutions digitales, la restauration, l’architecture, le génie civil, le bien-être et la gestion de fourrière. Le site met en avant la diversité et la complémentarité des filiales du groupe à travers une interface élégante, responsive et structurée. Chaque domaine d’activité bénéficie d’une présentation dédiée, permettant aux visiteurs de découvrir l’expertise de Krest Holding dans les services numériques avec KrestDev, la restauration moderne, le design architectural durable, les études géotechniques, les loisirs urbains (rooftop, fitness, spa) ainsi que la gestion municipale de fourrières. Ce projet vise à renforcer l’image de marque du groupe, à valoriser ses engagements en matière d’innovation et de performance, et à faciliter les contacts avec les partenaires et clients potentiels.",
+        "sept": "Création d’un site vitrine moderne et fonctionnel pour Le Carino Pizzeria, une enseigne italo-camerounaise située au cœur du centre commercial PlaYce Warda à Yaoundé. Le site reflète l’ambiance conviviale et chaleureuse du restaurant, tout en offrant une expérience utilisateur fluide et intuitive. Il permet aux visiteurs de consulter un menu interactif riche en pizzas, burgers, pâtes, glaces artisanales, cocktails et autres spécialités, de commander leurs plats en ligne avec une première livraison gratuite, de payer de manière sécurisée et de réserver une table directement depuis la plateforme. Entièrement responsive, le site s’adapte à tous les supports (ordinateurs, tablettes, smartphones), combinant ainsi une forte identité visuelle avec des fonctionnalités pratiques pour répondre aux besoins des clients et valoriser l’univers unique de Le Carino Pizzeria."
+      }
     }
   }
+}

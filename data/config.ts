@@ -1,4 +1,5 @@
 import { Config, Contact } from "@/types/config";
+import { useTranslations } from "next-intl";
 
 export const config:Config = {
     name: "KrestDev",
@@ -9,6 +10,6 @@ export const config:Config = {
 
 export const contactData:Contact = {
     email: "contact@krestdev.com",
-    phone: "+237 6 99 99 99 99",
+    phone: "+237 6 73 82 37 84",
     address: "Tradex Bonamoussadi, Douala Cameroun"
 }
