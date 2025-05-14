@@ -15,7 +15,7 @@ const Hero = () => {
             <div
                 className='w-full h-[80%] bg-cover bg-no-repeat flex justify-center items-start md:items-center '
                 style={{
-                    backgroundImage: `url('/images/hero.png')`,
+                    backgroundImage: `url('/images/hero.webp')`,
                     backgroundSize: 'cover',
                     overflow: 'visible',
                 }}
@@ -32,7 +32,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <img
-                        src='/images/projet.png'
+                        src='/images/projet.webp'
                         alt='projet'
                         className='object-center max-w-[1400px] w-[80%] -mb-50 md:-mb-60 lg:-mb-65'
                     />

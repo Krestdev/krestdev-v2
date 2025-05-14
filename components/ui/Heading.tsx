@@ -9,7 +9,7 @@ const Heading = ({title, description}: Props) => {
   return (
     <div 
     style={{
-        backgroundImage: `url('/images/hero.png')`,
+        backgroundImage: `url('/images/hero.webp')`,
         backgroundSize: 'cover',
         overflow: 'hidden',
     }}

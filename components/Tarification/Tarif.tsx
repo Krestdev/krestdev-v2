@@ -29,7 +29,7 @@ const Tarif = ({ tarif }: Props) => {
                 <div className='flex flex-col gap-2 w-full'>
                     <p className='text-[14px] text-[#606060]'>{tarif.subDesc}</p>
                     {
-                         <p className='text-[20px] font-semibold text-black'>{tarif.prix ? `${t("montantC")} ${tarif.prix}` : `${t("montantI")}`}</p>
+                         <p className='text-[20px] font-semibold text-black text-nowrap'>{tarif.prix ? `${t("montantC")} ${tarif.prix}` : `${t("montantI")}`}</p>
                     }
                 </div>
             </div>

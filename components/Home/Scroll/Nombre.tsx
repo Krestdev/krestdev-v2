@@ -22,7 +22,7 @@ const Nombre = ({ nombre, uni, title }: NombreProps) => {
 
     return (
         <div className='flex flex-col items-center lg:items-start'>
-            <p>{title}</p>
+            <p className='text-nowrap'>{title}</p>
             <div className='flex flex-row '>
                 <motion.h1 className='font-semibold text-[48px] md:text-[60px] lg:text-[80px] text-white h-[124px] flex items-center'>{rounded}</motion.h1>
                 <p className='font-semibold text-[48px] md:text-[60px] lg:text-[80px] text-white flex items-center'>{uni}</p>

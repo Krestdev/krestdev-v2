@@ -16,7 +16,7 @@ const Statistique = () => {
                     {t("title1")} <span className='font-mono font-normal tracking-normal'>{` ${t("title2")}`}</span>
                 </h2>
             </div>
-            <span className='flex flex-col-reverse items-center lg:items-start lg:flex-row justify-between px-7 containerBloc py-0'>
+            <span className='flex flex-col-reverse items-center lg:items-start lg:flex-row justify-between lg:justify-normal lg:gap-10 px-7 containerBloc py-0'>
                 <img src="/images/statistiques.png" alt="Statistique" className='w-[408px] h-[229.5px] rounded-[12px] object-cover' />
                 <div className='flex flex-col items-center lg::items-start justify-start gap-5 max-w-[735px] w-full'>
                     <p>{t("description")}</p>

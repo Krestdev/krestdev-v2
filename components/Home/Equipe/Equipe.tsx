@@ -11,7 +11,7 @@ const Equipe = () => {
     return (
         <div className='w-full flex flex-col items-center py-[60px] md:py-[96px] gap-10'
             style={{
-                backgroundImage: `url("/images/bgEquipe.png")`,
+                backgroundImage: `url("/images/bgEquipe.webp")`,
                 backgroundSize: 'cover',
                 height: "765px",
             }}>
