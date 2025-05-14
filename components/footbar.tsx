@@ -6,24 +6,24 @@ import React from 'react'
 function Footbar() {
   const t = useTranslations("Footer")
   return (
-    <div className='flex flex-col items-center bg-radial-[at_50%_0%] from-[#000000] via-[#061D37] to-[#013B7D]  to-100% w-full'>
-      <div className='flex flex-wrap gap-10  px-7 lg:px-0 justify-between pt-[96px] pb-10 max-w-[1280px] w-full'>
-        <div className='flex flex-col gap-3 max-w-[299px] w-full'>
-          <img src="/images/logo.png" alt="logo" className='h-8 w-[161px] object-cover' />
-          <p className='text-[#D9EBFF] text-[14px] font-normal'>{t("description")}</p>
+    <div className='w-full flex flex-col items-center bg-radial-[at_50%_0%] from-black via-black-blue to-midnight-blue to-100%'>
+      <div className='max-w-7xl w-full px-7 v-space pb-10 flex flex-wrap gap-10 justify-between'>
+        <div className='max-w-[300px] w-full flex flex-col gap-3'>
+          <img src="/images/logo.png" alt="logo" className='h-8 w-auto object-contain object-left' />
+          <p className='text-subtitle-blue text-sm font-normal'>{t("description")}</p>
         </div>
         <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-2'>
-          <p className='text-[#D9EBFF] text-[14px]'>{t("email")}</p>
-            <Link href={`mailto:${contactData.email}`} className='text-white text-[16px] font-semibold'>{contactData.email}</Link>
+          <p className='text-subtitle-blue text-sm'>{t("email")}</p>
+            <Link href={`mailto:${contactData.email}`} className='text-white text-base font-semibold'>{contactData.email}</Link>
           </div>
           <div className='flex flex-col gap-2'>
-          <p className='text-[#D9EBFF] text-[14px]'>{t("phone")}</p>
-            <Link href={`tel:${contactData.phone}`} className='text-white text-[16px] font-semibold'>{contactData.phone}</Link>
+          <p className='text-subtitle-blue text-sm'>{t("phone")}</p>
+            <Link href={`tel:${contactData.phone}`} className='text-white text-base font-semibold'>{contactData.phone}</Link>
           </div>
           <div className='flex flex-col gap-2'>
-          <p className='text-[#D9EBFF] text-[14px]'>{t("address")}</p>
-            <p className='text-white text-[16px] font-semibold'>{contactData.address}</p>
+          <p className='text-subtitle-blue text-sm'>{t("address")}</p>
+            <p className='text-white text-base font-semibold'>{contactData.address}</p>
           </div>
         </div>
         <div className='flex flex-row gap-4'>
@@ -40,8 +40,8 @@ function Footbar() {
           </div>
         </div>
       </div>
-      <div className='w-full flex items-center justify-center px-[10px] py-5 gap-[10px] border-t border-[#3684DB] '>
-        <p className='text-[14px] text-[#D9EBFF]'>{t("copyright")}</p>
+      <div className='w-full flex items-center justify-center px-3 py-5 gap-3 border-t border-primary '>
+        <p className='text-sm text-subtitle-blue'>{t("copyright")}</p>
       </div>
     </div>
   )

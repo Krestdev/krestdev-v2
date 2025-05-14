@@ -54,6 +54,21 @@ export function useTeamData() {
             poste: t("graphic"),
             image: "/images/khareem.webp"
         },
+        {
+          nom: "Deutou Sandra",
+          poste: t("content"),
+          image:"/images/deutou.webp"
+        },
+        {
+          nom: "Prospert Woike",
+          poste: t("communityManager"),
+          image: "/images/prospert.webp"
+        },
+        {
+          nom: "Get Nguessong",
+          poste: t("marketing"),
+          image: "/images/get.webp"
+        }
     ]
 }
 export interface TarifItem {

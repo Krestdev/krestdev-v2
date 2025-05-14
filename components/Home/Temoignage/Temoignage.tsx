@@ -1,8 +1,7 @@
-import React from 'react'
-import TemoignageComp from './TemoignageComp'
-import { useTranslations } from 'next-intl'
+import { RevealGroup } from '@/components/reveal'
 import { AutoScroll } from '@/components/ui/AutoScroll'
 import { useTestimonialData } from '@/data/data'
+import { useTranslations } from 'next-intl'
 
 interface Temoignage {
     image: string
@@ -16,12 +15,12 @@ const Temoignage = () => {
     const temoignages = useTestimonialData()
     return (
         <div className='containerBloc flex flex-col gap-10 items-center'>
-            <div className='flex flex-col items-center gap-2 px-7 max-w-[844px]'>
+            <RevealGroup y={15} blur={6} className='flex flex-col items-center gap-2 px-7 max-w-[844px]'>
                 <h2 className='text-center'>
-                    {t("title1")} <span className='font-mono font-normal'>{` ${t("title2")}`}</span>
+                    {t("title1")} <span className='cursive-text'>{` ${t("title2")}`}</span>
                 </h2>
                 <p className='subtitle'>{t("description")}</p>
-            </div>
+            </RevealGroup>
             <AutoScroll item={temoignages} />
         </div>
     )

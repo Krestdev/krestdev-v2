@@ -32,7 +32,7 @@ export function EquipeCar({ equipe }: Props) {
     }, [emblaRef])
 
     return (
-        <div className="max-w-[1280px] w-full overflow-hidden">
+        <div className="max-w-fit w-full overflow-hidden">
             <Carousel
                 opts={{
                     align: "center",
@@ -47,7 +47,7 @@ export function EquipeCar({ equipe }: Props) {
                     {equipe.map((membre, index) => (
                         <CarouselItem
                             key={index}
-                            className="basis-[80%] md:basis-[40%] lg:basis-[25%] flex-shrink-0"
+                            className="basis-[300px] flex-shrink-0"
                         >
                             <EquipeComp {...membre} />
                         </CarouselItem>

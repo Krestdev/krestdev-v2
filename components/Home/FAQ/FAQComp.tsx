@@ -1,6 +1,7 @@
 import React from 'react'
 import { AccordionComp } from './AccordionComp'
 import { useTranslations } from 'next-intl'
+import Reveal from '@/components/reveal'
 
 const FAQ = () => {
     const t = useTranslations("FAQ")
@@ -28,8 +29,10 @@ const FAQ = () => {
     ]
 
     return (
-        <div className="w-full py-[60px] md:py-[96px] flex flex-col gap-10 items-center justify-center">
-            <h2>{"FAQ(Foire aux Question)"}</h2>
+        <div className="w-full v-space flex flex-col gap-10 items-center justify-center">
+            <Reveal y={15} blur={6}>
+                <h2>{`FAQ (${t("title")})`}</h2>
+            </Reveal>
             <AccordionComp items={items} />
         </div>
     )

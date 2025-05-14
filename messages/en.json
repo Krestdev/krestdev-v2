@@ -90,7 +90,10 @@
     "chef": "Project Manager",
     "backend": "Backend Developer",
     "frontend": "Frontend Developer",
-    "graphic": "Graphic Designer"
+    "graphic": "Graphic Designer",
+    "marketing": "Marketing Manager",
+    "communityManager": "Community Manager",
+    "content": "Copywriter"
   },
   "FAQ": {
     "title": "Frequently Asked Questions",

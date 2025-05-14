@@ -7,6 +7,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel"
 import TemoignageComp from "../Home/Temoignage/TemoignageComp"
+import Reveal, { RevealGroup } from "../reveal"
 
 interface Temoignage {
   image: string
@@ -54,7 +55,7 @@ export function AutoScroll({ item }: Props) {
 
   if (isMobile) {
     return (
-      <div className="flex flex-col w-fit">
+      <RevealGroup y={0} blur={6} className="flex flex-col w-fit">
         {item.map((x, i) => (
           <div key={i} className="w-fit">
             <TemoignageComp
@@ -65,7 +66,7 @@ export function AutoScroll({ item }: Props) {
             />
           </div>
         ))}
-      </div>
+      </RevealGroup>
     )
   }
 
@@ -84,12 +85,14 @@ export function AutoScroll({ item }: Props) {
             key={i}
             className="basis-auto shrink-0 grow-0 p-0"
           >
-            <TemoignageComp
-              image={x.image}
-              name={x.name}
-              description={x.description}
-              titre={x.titre}
-            />
+            <Reveal y={0} blur={6} delay={0.3}>
+              <TemoignageComp
+                image={x.image}
+                name={x.name}
+                description={x.description}
+                titre={x.titre}
+              />
+            </Reveal>
           </CarouselItem>
         ))}
       </CarouselContent>

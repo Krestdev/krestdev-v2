@@ -8,13 +8,14 @@ import {
 import React from "react";
 import ProjectDisplay from "./project-display";
 import { useProjetData } from "@/data/data";
+import Reveal from "@/components/reveal";
 
 function Projects() {
 
   const projets = useProjetData()
 
   return (
-    <section
+    <Reveal y={0} x={20}
       id="projects"
       className="component flexing items-start justify-start"
     >
@@ -44,7 +45,7 @@ function Projects() {
           <CarouselNext />
         </span>
       </Carousel>
-    </section>
+    </Reveal>
   );
 }
 

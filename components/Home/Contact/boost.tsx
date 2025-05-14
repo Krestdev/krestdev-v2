@@ -1,23 +1,26 @@
 "use client"
 
+import Reveal, { RevealGroup } from '@/components/reveal'
 import { Button } from '@/components/ui/button'
 import { useTranslations } from 'next-intl'
-import { useRouter } from 'next/navigation'
-import React from 'react'
+import Link from 'next/link'
 
 const Boost = () => {
     const t = useTranslations("Boost")
-    const router = useRouter()
     return (
-        <div className='flex flex-col items-center gap-10 py-[60px] md:py-[96px] bg-radial-[at_50%_0%] from-[#013B7D] via-[#000000] to-[#061D37] w-full '>
-            <div className='flex flex-col items-center gap-2 px-7 max-w-[1280px] text-center'>
+        <section className='flex flex-col items-center gap-10 py-[60px] md:py-[96px] bg-radial-[at_50%_0%] from-[#013B7D] via-[#000000] to-[#061D37] w-full '>
+            <RevealGroup y={15} blur={6} className='flex flex-col items-center gap-2 px-7 max-w-[1280px] text-center'>
                 <h2 className='text-white max-w-[844px] w-full'>
-                    {t("title1")} <span className='font-mono font-normal'>{` ${t("title2")}`}</span>
+                    {t("title1")} <span className='cursive-text'>{` ${t("title2")}`}</span>
                 </h2>
-                <p className='max-w-[540px] w-full text-[#D9EBFF] subtitle text-[16px]'>{t("description")}</p>
-            </div>
-            <Button onClick={() => router.push("/contacts")}  className='w-fit bg-white text-black'>{t("button")}</Button>
-        </div>
+                <p className='max-w-[540px] subtitle text-subtitle-blue'>{t("description")}</p>
+            </RevealGroup>
+            <Reveal y={20} delay={0.4}>
+                <Link href={"/contact"}>
+                    <Button variant={"white"} size={"hero"}>{t("button")}</Button>
+                </Link>
+            </Reveal>
+        </section>
     )
 }
 

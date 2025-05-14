@@ -1,6 +1,4 @@
-import { div } from 'framer-motion/client'
 import { useTranslations } from 'next-intl'
-import React from 'react'
 import Process from './Process'
 
 const GridProcess = () => {
@@ -33,7 +31,7 @@ const GridProcess = () => {
         },
     ]
     return (
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap0'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
             {
                 process.map((x, i) => {
                     return (

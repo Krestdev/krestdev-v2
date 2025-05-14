@@ -10,12 +10,12 @@ interface Props {
 const Tarif = ({ tarif }: Props) => {
     const t = useTranslations("Tarification.Grid");
     return (
-        <div className='flex flex-col gap-8  max-w-[420px] h-full border border-[#D9EBFF]'>
-            <div className='flex flex-row gap-4 w-full px-5 py-4 bg-[#D9EBFF]'>
-                <img src={tarif.image} alt={tarif.title} className='h-20 w-20 rounded-[40px] gap-[10px] object-cover' />
+        <div className='flex flex-col gap-8  max-w-[420px] h-full border border-subtitle-blue'>
+            <div className='flex flex-row gap-4 w-full px-5 py-4 bg-subtitle-blue'>
+                <img src={tarif.image} alt={tarif.title} className='h-20 w-20 rounded-full object-cover' />
                 <div className='flex flex-col gap-2'>
                     <h3 className='text-black text-start'>{tarif.title}</h3>
-                    <p className='text-[16px]'>{tarif.description}</p>
+                    <p className='subtitle text-black'>{tarif.description}</p>
                 </div>
             </div>
             <div className='flex flex-col h-full justify-between px-10 pb-5'>

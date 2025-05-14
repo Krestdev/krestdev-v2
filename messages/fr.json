@@ -78,7 +78,7 @@
         "message": "Très satisfaits du site conçu par KrestDev : design fidèle à notre image, navigation fluide et commandes en ligne simplifiées. Une équipe professionnelle, rapide et à l’écoute de nos besoins."
       },
       "cinq": {
-        "title": "Promotrice - Tyju Infosports",
+        "title": "Co-fondatrice - Tyju Infosports",
         "message": "Très satisfaite du site réalisé : design moderne, agréable et apprécié des utilisateurs. Malgré quelques ajustements après lancement, le résultat est positif. Une belle première expérience avec une équipe sérieuse et à l’écoute."
       }
     }
@@ -90,10 +90,13 @@
     "chef": "Chef de projet",
     "backend": "Développeur Backend",
     "frontend": "Développeur Frontend",
-    "graphic": "Designer Graphique"
+    "graphic": "Designer Graphique",
+    "marketing": "Responsable Marketing",
+    "communityManager": "Community Manager",
+    "content": "Rédactrice de Contenu"
   },
   "FAQ": {
-    "title": "Questions Fréquemment Posées",
+    "title": "Foire aux Questions",
     "Question1": {
       "title": "Quels délais pour livrer un site web ?",
       "content": "Le délai de livraison d’un site web dépend de sa complexité. En général, nous livrons un site vitrine en 2 à 4 semaines et un site e-commerce en 4 à 8 semaines."
