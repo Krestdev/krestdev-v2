@@ -12,6 +12,8 @@ import Info from './Info'
 import { toast } from 'sonner'
 import { locales } from '@/i18n/config'
 import { useRouter } from 'next/navigation'
+import { Textarea } from '../ui/textarea'
+import { RevealGroup } from '../reveal'
 
 const formSchema = z.object({
   name: z.string().min(3, {
@@ -79,14 +81,15 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='flex flex-col justify-center lg:flex-row h-fit w-full gap-10 py-[96px] px-7'>
+    <section className='containerBloc grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10'>
+      <div className='p-7 flex flex-col gap-6 sm:gap-8 border border-subtitle-blue rounded-sm sm:rounded-lg lg:rounded-xl'>
+        <RevealGroup y={15} blur={6} className='flex flex-col gap-2'>
+            <h2 className='text-left'>{t("title")}</h2>
+            <p className='text-paragraph text-xs sm:text-sm lg:text-base'>{t("description")}</p>
+          </RevealGroup>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col p-7 gap-8 rounded-[12px] border border-[#D9EBFF] '>
-          <div className='flex flex-col gap-2'>
-            <h2>{t("title")}</h2>
-            <p className='text-black'>{t("description")}</p>
-          </div>
-
+        <form onSubmit={form.handleSubmit(onSubmit)}>
+          <RevealGroup className='grid gap-4'>
           <FormField
             control={form.control}
             name="name"
@@ -94,7 +97,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel>{t("nom")}</FormLabel>
                 <FormControl>
-                  <Input {...field} className='max-w-[360px] w-full px-4 py-2 h-[40px] border-[#BEBEBE] rounded-none' placeholder="ex. John Doe" />
+                  <Input {...field} placeholder="ex. John Doe" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -108,7 +111,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel>{t("email")}</FormLabel>
                 <FormControl>
-                  <Input {...field} className='max-w-[360px] w-full px-4 py-2 h-[40px] border-[#BEBEBE] rounded-none' placeholder="ex. johndoe@gmail.com" />
+                  <Input {...field} placeholder="ex. johndoe@gmail.com" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -122,7 +125,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel>{t("tel")}</FormLabel>
                 <FormControl>
-                  <Input {...field} className='max-w-[360px] w-full px-4 py-2 h-[40px] border-[#BEBEBE] rounded-none' placeholder="ex. +237678165..." />
+                  <Input {...field} placeholder="ex. +237678165..." />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -136,7 +139,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel>{t("objet")}</FormLabel>
                 <FormControl>
-                  <Input {...field} className='max-w-[360px] w-full px-4 py-2 h-[40px] border-[#BEBEBE] rounded-none' placeholder={t("objetLabel")} />
+                  <Input {...field} placeholder={t("objetLabel")} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -150,7 +153,7 @@ const ContactForm = () => {
               <FormItem>
                 <FormLabel>{t("message")}</FormLabel>
                 <FormControl>
-                  <Input {...field} className='max-w-[360px] w-full px-4 py-2 h-[40px] border-[#BEBEBE] rounded-none' placeholder={t("messageLabel")} />
+                  <Textarea {...field} placeholder={t("messageLabel")}/>
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -160,10 +163,12 @@ const ContactForm = () => {
           <Button type='submit' className='w-fit' disabled={form.formState.isSubmitting}>
             {form.formState.isSubmitting ? t("submitting") : t("submit")}
           </Button>
+          </RevealGroup>
         </form>
       </Form>
+      </div>
       <Info />
-    </div>
+    </section>
   )
 }
 

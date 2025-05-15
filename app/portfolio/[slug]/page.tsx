@@ -27,7 +27,7 @@ const Page = ({ params }: PageProps) => {
   if (!projet) return notFound()
 
   return (
-    <div className="w-full overflow-clip">
+    <>
       <Head nom={projet.nom} preview={projet.preview} />
       <Port
         nom={projet.nom}
@@ -37,7 +37,7 @@ const Page = ({ params }: PageProps) => {
         slug={projet.slug}
         lien={projet.lien}
       />
-    </div>
+    </>
   )
 }
 

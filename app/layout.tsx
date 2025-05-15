@@ -10,11 +10,13 @@ import { Toaster } from 'sonner'; // Import ajouté
 const primaryFont = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap"
 });
 
 const secondaryFont = Instrument_Serif({
   variable: "--font-instrument",
   subsets: ["latin"],
+  display: "swap",
   weight: "400",
   style: "italic"
 });
