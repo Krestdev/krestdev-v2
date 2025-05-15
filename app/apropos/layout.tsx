@@ -1,8 +1,7 @@
 import Heading from "@/components/ui/Heading";
-import { getPageTitle } from "@/lib/utils";
-import { getTranslations } from "next-intl/server";
-import { useTranslations } from "next-intl";
 import { Metadata } from "next";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import React from "react";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -11,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const t = await getTranslations({ locale, namespace: "Apropos" });
 
     return {
-        title: getPageTitle(t("title")),
+        title: t("title"),
         description: t("description"),
     };
 }

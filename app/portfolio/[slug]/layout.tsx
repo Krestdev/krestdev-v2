@@ -1,9 +1,7 @@
 // app/[locale]/login/layout.tsx
 
-import Heading from "@/components/ui/Heading";
-import { getPageTitle } from "@/lib/utils";
-import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import React from "react";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string, slug: string }> }): Promise<Metadata> {
@@ -12,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const t = await getTranslations({ locale, namespace: "Portfolio.Projet" });
 
   return {
-    title: getPageTitle(t("title") + slug),
+    title: `${t("title")} | ${slug}`,
     description: t("description"),
   };
 }

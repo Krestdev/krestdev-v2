@@ -1,11 +1,10 @@
-import type { Metadata } from "next";
-import { Instrument_Serif, Inter } from "next/font/google";
-import "./globals.css";
 import Layout from "@/components/layout";
-import { config } from "@/data/config";
+import type { Metadata } from "next";
 import { NextIntlClientProvider } from 'next-intl';
-import { getLocale } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
+import { Instrument_Serif, Inter } from "next/font/google";
 import { Toaster } from 'sonner'; // Import ajouté
+import "./globals.css";
 
 const primaryFont = Inter({
   variable: "--font-inter",
@@ -21,13 +20,21 @@ const secondaryFont = Instrument_Serif({
   style: "italic"
 });
 
-export const metadata: Metadata = {
+export async function generateMetadata():Promise<Metadata>{
+  const t = await getTranslations("seo");
+  const config = {
+    name: "KrestDev",
+    description: "description",
+    version: "1.0.0",
+    url:"https://krestdev.com",
+}
+  return {
   title: {
     template: `%s - ${config.name}`,
-    default: `${config.name} - Transformez vos ambitions digitales en réussites mesurables.`,
+    default: `${config.name} - ${t("title")}.`,
   },
-  description: config.description,
-  keywords: ["KrestDev", "Krest", "KrestDev.com", "Douala", "Cameroun", "Développement", "Web", "Digital", "Marketing", "SEO", "Site Web"],
+  description: t(config.description),
+  keywords: ["KrestDev", "Krest", "KrestDev.com", "Douala", "Cameroun", "Développement", "Web", "Digital", "Marketing", "SEO", "Site Web", "website", "Cameroon"],
   authors: [{ name: "KrestDev" }],
   creator: "KrestDev",
   publisher: "KrestDev",
@@ -39,14 +46,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: {
       template: `%s - ${config.name}`,
-      default: `${config.name} - Transformez vos ambitions digitales en réussites mesurables.`
+      default: `${config.name} - ${t("title")}.`
     },
-    description: config.description,
+    description: t(config.description),
     url: config.url,
     siteName: config.name,
     //images: []  to-do:add images for social media sharing
   }
-};
+}
+}
+
 
 export default async function RootLayout({
   children,
