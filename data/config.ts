@@ -1,11 +1,4 @@
-import { Config, Contact } from "@/types/config";
-
-export const config:Config = {
-    name: "KrestDev",
-    description: "Votre Partenaire Digital Stratégique. Basés à Douala, nous transformons vos ambitions digitales en réussites mesurables.",
-    version: "1.0.0",
-    url:"https://krestdev.com",
-}
+import { Contact } from "@/types/config"
 
 export const contactData:Contact = {
     email: "contact@krestdev.com",
