@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { Instrument_Serif, Inter } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Toaster } from 'sonner'; // Import ajouté
 import "./globals.css";
 
@@ -79,6 +80,7 @@ export default async function RootLayout({
               visibleToasts={3}
             />
           </Layout>
+          <GoogleAnalytics gaId="G-GQZ5DQE1LS"/>
         </NextIntlClientProvider>
       </body>
     </html>
