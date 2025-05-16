@@ -52,7 +52,7 @@ export async function generateMetadata():Promise<Metadata>{
     description: t(config.description),
     url: config.url,
     siteName: config.name,
-    //images: []  to-do:add images for social media sharing
+    images: ["og.webp"]  
   }
 }
 }
