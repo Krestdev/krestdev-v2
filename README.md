@@ -20,6 +20,7 @@ To run the project locally:
 
 ```bash
 npm install
+touch .env # Make sure to initialize NEXT_PUBLIC_EMAIL & NEXT_PUBLIC_PASSWORD for the contact API
 npm run dev
 # or
 yarn dev
