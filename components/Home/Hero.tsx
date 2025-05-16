@@ -28,7 +28,7 @@ const Hero = () => {
                   {t("services")}
                 </Button>
               </Link>
-              <Link href={"/portofolio"}>
+              <Link href={"/portfolio"}>
                 <Button size={"hero"}>{t("portfolio")}</Button>
               </Link>
             </div>
