@@ -11,7 +11,7 @@ const Processus = () => {
                     <h2 className='text-black text-center max-w-[844px] w-full'>
                         {t("title")}
                     </h2>
-                <p className='subtitle'>
+                <p className='subtitle text-center'>
                     {t("description")}
                 </p>
             </RevealGroup>
