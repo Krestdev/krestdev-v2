@@ -1,19 +1,17 @@
 "use client"
 
-import React from 'react'
-import { useForm } from "react-hook-form"
-import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
+import { useTranslations } from 'next-intl'
+import { useRouter } from 'next/navigation'
+import { useForm } from "react-hook-form"
+import { toast } from 'sonner'
+import { z } from "zod"
+import { RevealGroup } from '../reveal'
+import { Button } from '../ui/button'
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
 import { Input } from '../ui/input'
-import { useTranslations } from 'next-intl'
-import { Button } from '../ui/button'
-import Info from './Info'
-import { toast } from 'sonner'
-import { locales } from '@/i18n/config'
-import { useRouter } from 'next/navigation'
 import { Textarea } from '../ui/textarea'
-import { RevealGroup } from '../reveal'
+import Info from './Info'
 
 const formSchema = z.object({
   name: z.string().min(3, {
@@ -21,7 +19,7 @@ const formSchema = z.object({
   }),
   email: z.string().email(),
   phone: z.string(),
-  objet: z.string().min(4, {
+  subject: z.string().min(4, {
     message: "Veuillez renseigner au moins 4 caractères"
   }),
   message: z.string().min(12, {
@@ -37,7 +35,7 @@ const ContactForm = () => {
       name: "",
       email: "",
       phone: "",
-      objet: "",
+      subject: "",
       message: ""
     },
   });
@@ -59,7 +57,7 @@ const ContactForm = () => {
           email: data.email,
           phone: data.phone,
           profession: "",
-          subject: data.objet,
+          subject: data.subject,
           message: data.message,
           lang: locale
         }),
@@ -134,12 +132,12 @@ const ContactForm = () => {
 
           <FormField
             control={form.control}
-            name="objet"
+            name="subject"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>{t("objet")}</FormLabel>
+                <FormLabel>{t("subject")}</FormLabel>
                 <FormControl>
-                  <Input {...field} placeholder={t("objetLabel")} />
+                  <Input {...field} placeholder={t("subjectLabel")} />
                 </FormControl>
                 <FormMessage />
               </FormItem>

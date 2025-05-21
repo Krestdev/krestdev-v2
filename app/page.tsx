@@ -10,6 +10,7 @@ import IconBox from "@/components/Home/Scroll/icon-box";
 import Statistique from "@/components/Home/Scroll/Statistique";
 import Temoignage from "@/components/Home/Temoignage/Temoignage";
 import { HorizontalScrollCarousel } from "@/components/horizontal-scroll";
+import PageWrapper from "@/components/pageWrapper";
 import { TextReveal } from "@/components/ui/text-reveal";
 import { aboutData } from "@/data/data";
 import { useTranslations } from "next-intl";
@@ -17,7 +18,7 @@ import { useTranslations } from "next-intl";
 export default function Home() {
   const t = useTranslations("About");
   return (
-    <div className="flex flex-col items-center justify-center overflow-clip">
+    <PageWrapper>
       <Hero />
       <div className="containerBloc flex flex-col items-center justify-center gap-10 sm:gap-[60px]">
         <TextReveal
@@ -37,6 +38,6 @@ export default function Home() {
       <Equipe />
       <FAQ />
       <Boost />
-    </div>
+    </PageWrapper>
   );
 }
