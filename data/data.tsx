@@ -55,7 +55,7 @@ export function useTeamData() {
             image: "/images/khareem.webp"
         },
         {
-          nom: "Deutou Sandra",
+          nom: "Claude Sandra Deutou",
           poste: t("content"),
           image:"/images/deutou.webp"
         },
