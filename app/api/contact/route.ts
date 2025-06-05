@@ -9,10 +9,6 @@ const SMTP_SERVER_USERNAME = process.env.NEXT_PUBLIC_EMAIL;
 const SMTP_SERVER_PASSWORD = process.env.NEXT_PUBLIC_PASSWORD;
 const SITE_MAIL_RECIEVER = "kenfackjordanjunior@gmail.com";
 
-if (!SMTP_SERVER_USERNAME || !SMTP_SERVER_PASSWORD) {
-  throw new Error("Les identifiants SMTP ne sont pas définis.");
-}
-
 const transporter = nodemailer.createTransport({
   host: "smtp.titan.email",
   port: 465,
@@ -31,6 +27,12 @@ export async function POST(request: Request) {
     const { email, name, subject, message, phone }: mailProps =
       await request.json();
 
+      if (!SMTP_SERVER_USERNAME || !SMTP_SERVER_PASSWORD) {
+  return NextResponse.json({
+    error : "Les informations d'authentification du serveur SMTP ne sont pas définies.",
+  }
+  , { status: 500 });
+}
     if (!email || !name || !subject || !message || !phone) {
       return NextResponse.json(
         { error: "Tous les champs sont requis" },
