@@ -140,12 +140,12 @@ export function useTarifData(): TarifItem[] {
   ]
 };
 
-interface Portfolio {
+export interface Portfolio {
   slug: string,
   nom: string,
   preview: string,
   image: string,
-  lien: string,
+  lien?: string,
   description: string,
   service: string
 }
@@ -156,7 +156,7 @@ export function useProjetData(): Portfolio[] {
   return [
     {
       nom: "CREACONSULT",
-      preview: "/images/preCrea.webp",
+      preview: "/images/projects/creaconsult.webp",
       image: "/images/imCrea.png",
       lien: "https://www.betcreaconsult.com/",
       description: t("un"),
@@ -165,7 +165,7 @@ export function useProjetData(): Portfolio[] {
     },
     {
       nom: "TYJU INFOSPORTS",
-      preview: "/images/preTyju.webp",
+      preview: "/images/projects/tyju.webp",
       image: "/images/imTyju.png",
       lien: "https://www.tyjuinfosport.com/",
       description: t("deux"),
@@ -174,7 +174,7 @@ export function useProjetData(): Portfolio[] {
     },
     {
       nom: "FONDATION JEANNE CAROLINE",
-      preview: "/images/preFondation.webp",
+      preview: "/images/projects/fjcm.webp",
       image: "/images/imFondation.png",
       lien: "https://www.fondationjeannecarolinemfege.org/",
       description: t("trois"),
@@ -183,7 +183,7 @@ export function useProjetData(): Portfolio[] {
     },
     {
       nom: "COTRAF",
-      preview: "/images/preCotraf.webp",
+      preview: "/images/projects/cotraf.webp",
       image: "/images/imCotraf.png",
       lien: "https://cotraf-cm.com/",
       description: t("quartre"),
@@ -192,16 +192,16 @@ export function useProjetData(): Portfolio[] {
     },
     {
       nom: "SAGA AFRICA",
-      preview: "/images/preSaga.webp",
+      preview: "/images/projects/saga.webp",
       image: "/images/imSaga.png",
       lien: "https://www.saga-africa.com/",
       description: t("cinq"),
-      service: "Site Web",
+      service: "Ecommerce",
       slug: "saga_africa"
     },
     {
       nom: "KREST HOLDING",
-      preview: "/images/preKrest.webp",
+      preview: "/images/projects/krest.webp",
       image: "/images/imKrest.png",
       lien: "https://www.krestholding.com/",
       description: t("six"),
@@ -210,12 +210,30 @@ export function useProjetData(): Portfolio[] {
     },
     {
       nom: "LE CARINO PIZZERIA",
-      preview: "/images/preCarino.webp",
+      preview: "/images/projects/carino.webp",
       image: "/images/imCarino.webp",
       lien: "https://www.le-carino.com/",
       description: t("sept"),
-      service: "Site Web",
+      service: "Ecommerce",
       slug: "le_carino_pizzeria"
+    },
+    {
+      nom: "Alubassa",
+      preview: "/images/projects/alubassa.webp",
+      image: "/images/projects/alubassa_img.webp",
+      lien: "https://home.alubassa.org/",
+      description: t("huit"),
+      service: "Site Web",
+      slug: "alubassa"
+    },
+    {
+      nom: "Loumo",
+      preview: "/images/projects/loumo.webp",
+      image: "/images/projects/loumo_img.webp",
+      //lien: "#",
+      description: t("neuf"),
+      service: "Ecommerce",
+      slug: "loumo"
     },
   ]
 }

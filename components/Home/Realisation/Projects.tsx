@@ -32,11 +32,7 @@ function Projects() {
               className="pl-0 max-w-md w-full"
               key={i}
             >
-              <ProjectDisplay
-                url={x.lien}
-                image={x.image}
-                title={x.nom}
-              />
+              <ProjectDisplay {...x}/>
             </CarouselItem>
           ))}
         </CarouselContent>

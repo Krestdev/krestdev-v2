@@ -3,17 +3,9 @@ import { Button } from '../ui/button'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { RevealGroup } from '../reveal'
+import { Portfolio } from '@/data/data'
 
-interface Props {
-    slug: string,
-    nom: string,
-    service: string,
-    desc: string,
-    image: string,
-    lien: string,
-}
-
-const Port = ({ nom, service, desc, image, lien }: Props) => {
+const Port = ({ nom, service, lien, description, image }: Portfolio) => {
     const t = useTranslations("Portfolio.Projet")
     return (
         <section className='containerBloc flex flex-col md:items-center gap-6 sm:gap-8 lg:gap-10'>
@@ -32,13 +24,13 @@ const Port = ({ nom, service, desc, image, lien }: Props) => {
                         <p className='text-black text-lg leading-[120%] font-semibold'>{service}</p>
                     </div>
                 </div>
-                <Link target='_blank' href={lien} className='cursor-pointer'>
+                {lien && <Link target='_blank' href={lien} className='cursor-pointer'>
                     <Button>{t("lien")}</Button>
-                </Link>
+                </Link>}
             </RevealGroup>
             <RevealGroup y={15} blur={6} className='flex flex-col gap-4'>
                 <h1>{t("title")}</h1>
-                <p className='text-center text-paragraph text-base max-w-5xl w-full'>{desc}</p>
+                <p className='text-center text-paragraph text-base max-w-5xl w-full'>{description}</p>
             </RevealGroup>
             <img src={image} alt={nom} className='max-w-4xl w-full h-auto' />
         </section>

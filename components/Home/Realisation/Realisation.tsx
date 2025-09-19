@@ -13,7 +13,7 @@ const Realisation = () => {
                         {t("title1")} <span className='cursive-text'>{` ${t("title2")}`}</span>
                     </h2>
                     <p className='subtitle lg:max-w-[408px] w-full text-center lg:text-start'>{t("description")}</p>
-                    <Link href={"/portofolio"}>
+                    <Link href={"/portfolio"}>
                     <Button className='w-fit h-[40px] cursor-pointer'>{t("seeMore")}</Button>
                     </Link>
                 </RevealGroup>

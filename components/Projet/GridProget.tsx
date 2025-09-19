@@ -11,7 +11,7 @@ const GridProjet = () => {
     <section className='w-full v-space flex justify-center items-center bg-gradient-to-b from-black via-black-blue to-midnight-blue '>
       <RevealGroup blur={6} y={0} scale={0.75} className='max-w-7xl w-full px-7 grid grid-cols-1 lg:grid-cols-2 gap-10'>
         {
-          projet.map((x, i) => {
+          projet.reverse().map((x, i) => {
             return (
                 <Projet key={i} {...x} />
             )

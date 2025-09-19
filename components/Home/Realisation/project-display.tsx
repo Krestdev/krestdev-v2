@@ -1,16 +1,12 @@
 'use client'
+import { Portfolio } from '@/data/data';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
 import React, { useState, useEffect, useRef } from 'react';
 
-interface Props {
-  image: string;
-  title: string;
-  url: string;
-}
 
-function ProjectDisplay({ image, title, url }: Props) {
+function ProjectDisplay({ image, nom, slug }: Portfolio) {
   const [isHovered, setIsHovered] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -40,7 +36,7 @@ function ProjectDisplay({ image, title, url }: Props) {
   }, [isMobile]);
 
   return (
-    <Link href={url} target="_blank">
+    <Link href={`/portfolio/${slug}`} target="_blank">
       <motion.div
         ref={containerRef}
         initial={{ height: isMobile ? '100%' : '80%' }}
@@ -62,7 +58,7 @@ function ProjectDisplay({ image, title, url }: Props) {
         {/* Image */}
         <img
           src={image}
-          alt={title}
+          alt={nom}
           className="absolute top-0 left-0 w-full h-fit object-cover -z-10"
         />
 
@@ -83,7 +79,7 @@ function ProjectDisplay({ image, title, url }: Props) {
           transition={{ duration: 1 }}
           className="text-white text-center px-5 absolute bottom-[6rem] w-full z-10"
         >
-          {title}
+          {nom}
         </motion.h4>
       </motion.div>
     </Link>

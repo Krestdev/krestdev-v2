@@ -12,7 +12,7 @@ interface PageProps {
 
 const Page = ({ params }: PageProps) => {
   const [slug, setSlug] = useState<string | null>(null)
-  const projets = useProjetData()
+  const projects = useProjetData()
   
   useEffect(() => {
     params.then(resolvedParams => {
@@ -20,23 +20,16 @@ const Page = ({ params }: PageProps) => {
     })
   }, [params])
 
-  if (!slug) return <div>Loading...</div>
+  if (!slug) return <div>{"Loading..."}</div>
 
-  const projet = projets.find(p => p.slug === slug)
+  const project = projects.find(p => p.slug === slug)
 
-  if (!projet) return notFound()
+  if (!project) return notFound()
 
   return (
     <>
-      <Head nom={projet.nom} preview={projet.preview} />
-      <Port
-        nom={projet.nom}
-        service={projet.service}
-        desc={projet.description}
-        image={projet.image}
-        slug={projet.slug}
-        lien={projet.lien}
-      />
+      <Head nom={project.nom} preview={project.preview} />
+      <Port {...project}/>
     </>
   )
 }
