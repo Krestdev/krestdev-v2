@@ -256,7 +256,7 @@ export function useTestimonialData() {
     },
     {
       image: "/images/juliette.webp",
-      name: "Francesco Feliziani",
+      name: "Fabrice",
       titre: t("trois.title"),
       description: t("trois.message"),
     },
