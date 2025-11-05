@@ -1,13 +1,13 @@
+// app/api/contact/route.ts (Next.js App Router)
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 import { mailProps } from "@/types/mail";
 import { contactEmail } from "@/lib/contactEmail";
-import { html } from "framer-motion/client";
 import { htmlMailSender } from "@/lib/htmlMailSender";
 
-const SMTP_SERVER_USERNAME = process.env.NEXT_PUBLIC_EMAIL;
-const SMTP_SERVER_PASSWORD = process.env.NEXT_PUBLIC_PASSWORD;
-const SITE_MAIL_RECIEVER = "kenfackjordanjunior@gmail.com";
+// ⚠️ Utilise des variables serveur (non NEXT_PUBLIC_)
+const SMTP_SERVER_USERNAME = process.env.EMAIL_USERNAME!;
+const SMTP_SERVER_PASSWORD = process.env.EMAIL_PASSWORD!;
 
 const transporter = nodemailer.createTransport({
   host: "smtp.titan.email",
@@ -17,58 +17,62 @@ const transporter = nodemailer.createTransport({
     user: SMTP_SERVER_USERNAME,
     pass: SMTP_SERVER_PASSWORD,
   },
-  tls: {
-    rejectUnauthorized: false,
-  },
+  // Inutile et potentiellement risqué :
+  // tls: { rejectUnauthorized: false },
 });
 
 export async function POST(request: Request) {
   try {
-    const { email, name, subject, message, phone }: mailProps =
-      await request.json();
+    const { email, name, subject, message, phone }: mailProps = await request.json();
 
-      if (!SMTP_SERVER_USERNAME || !SMTP_SERVER_PASSWORD) {
-  return NextResponse.json({
-    error : "Les informations d'authentification du serveur SMTP ne sont pas définies.",
-  }
-  , { status: 500 });
-}
+    if (!SMTP_SERVER_USERNAME || !SMTP_SERVER_PASSWORD) {
+      return NextResponse.json(
+        { error: "Les identifiants SMTP ne sont pas définis." },
+        { status: 500 }
+      );
+    }
+
     if (!email || !name || !subject || !message || !phone) {
       return NextResponse.json(
-        { error: "Tous les champs sont requis" },
+        { error: "Tous les champs sont requis." },
         { status: 400 }
       );
     }
 
-    const mailOptions = {
-      from: SMTP_SERVER_USERNAME,
+    // 1) Notification interne (vers ta boîte). Le point clé est replyTo 👇
+    const notificationToOwner = {
+      from: `"${process.env.SITE_NAME ?? "Site Web"}" <${SMTP_SERVER_USERNAME}>`, // doit rester une adresse de TON domaine
       to: SMTP_SERVER_USERNAME,
-      subject,
-      text: `Nouveau message de : ${name} - ${email} - ${phone}. Sujet: ${subject}. Message: ${message}.`,
+      subject: `[Contact] ${subject}`,
+      text: `De: ${name} <${email}> | Tel: ${phone}\n\n${message}`,
       html: contactEmail({ email, name, phone, subject, message }),
+      replyTo: `"${name}" <${email}>`, // ✅ bouton Répondre => l'adresse du visiteur
+      // (optionnel) envelope si tu veux forcer l’enveloppe SMTP
+      // envelope: { from: SMTP_SERVER_USERNAME, to: SITE_MAIL_RECEIVER }
     };
 
-    const confirmationMailOptions = {
-      from: SMTP_SERVER_USERNAME,
+    // 2) Accusé de réception pour le visiteur
+    const confirmationToVisitor = {
+      from: `"${process.env.SITE_NAME ?? "Support"}" <${SMTP_SERVER_USERNAME}>`,
       to: email,
-      subject: "Message de confirmation",
-      html: htmlMailSender({email, name, phone, subject, message})
+      subject: "Nous avons bien reçu votre message",
+      html: htmlMailSender({ email, name, phone, subject, message }),
     };
 
-    const submittedMail = await transporter.sendMail(mailOptions);
-    const confirmation = await transporter.sendMail(confirmationMailOptions);
+    const submittedMail = await transporter.sendMail(notificationToOwner);
+    const confirmation = await transporter.sendMail(confirmationToVisitor);
 
-    console.log("Message envoyé avec succès:", submittedMail.messageId);
-    console.log("Message envoyé avec succès:", confirmation.messageId);
+    console.log("Notification ID:", submittedMail.messageId);
+    console.log("Confirmation ID:", confirmation.messageId);
 
     return NextResponse.json(
-      { success: true, message: "Message envoyé avec succès" },
+      { success: true, message: "Message envoyé avec succès." },
       { status: 200 }
     );
   } catch (error) {
     console.error("Erreur lors de l'envoi de l'email:", error);
     return NextResponse.json(
-      { error: "Erreur interne lors de l'envoi de l'email" },
+      { error: "Erreur interne lors de l'envoi de l'email." },
       { status: 500 }
     );
   }
