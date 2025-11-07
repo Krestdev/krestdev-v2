@@ -12,7 +12,7 @@ const GridDomain = () => {
         {
             title: t("web"),
             description: t("webDescription"),
-            image: "/images/webSiteIcon2.svg"
+            image: "/images/websiteIcon2.svg"
         },
         {
             title: t("design"),
