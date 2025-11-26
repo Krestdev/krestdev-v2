@@ -235,6 +235,15 @@ export function useProjetData(): Portfolio[] {
       service: "Ecommerce",
       slug: "loumo"
     },
+    {
+      nom: "67 Design & Build",
+      preview: "/images/projects/67design.webp",
+      image: "/images/projects/67design_img.webp",
+      lien: "https://67designandbuild.krestdev.com",
+      description: t("67"),
+      service: "Site Web",
+      slug: "67-design-and-build"
+    }
   ]
 }
 
