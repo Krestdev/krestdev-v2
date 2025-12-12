@@ -72,8 +72,9 @@ const ContactForm = () => {
       toast.success(t("success"));
       form.reset();
 
-    } catch (error: any) {
-      toast.error(error.message || t("error"));
+    } catch (error) {
+      const message = error instanceof Error ? error.message : t("error")
+      toast.error(message);
       console.error("Erreur:", error);
     }
   };

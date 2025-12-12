@@ -3,6 +3,7 @@
 import * as React from "react"
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
 import EquipeComp from "./EquipeComp"
+import type { EmblaCarouselType } from "embla-carousel"
 
 interface Equipe {
     nom: string,
@@ -15,7 +16,7 @@ interface Props {
 }
 
 export function EquipeCar({ equipe }: Props) {
-    const [emblaRef, setEmblaRef] = React.useState<any>(null)
+    const [emblaRef, setEmblaRef] = React.useState<EmblaCarouselType>()
 
     React.useEffect(() => {
         if (!emblaRef) return

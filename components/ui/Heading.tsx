@@ -2,8 +2,8 @@ import React from 'react'
 import { RevealGroup } from '../reveal'
 
 interface Props {
-    title: String,
-    description: String
+    title: string,
+    description: string
 }
 
 const Heading = ({title, description}: Props) => {

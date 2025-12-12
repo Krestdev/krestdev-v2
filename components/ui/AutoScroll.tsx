@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel"
 import TemoignageComp from "../Home/Temoignage/TemoignageComp"
 import Reveal, { RevealGroup } from "../reveal"
+import type { EmblaCarouselType } from "embla-carousel"
 
 interface Temoignage {
   image: string
@@ -21,7 +22,7 @@ interface Props {
 }
 
 export function AutoScroll({ item }: Props) {
-  const [emblaRef, setEmblaRef] = React.useState<any>(null)
+  const [emblaRef, setEmblaRef] = React.useState<EmblaCarouselType>()
   const [isMobile, setIsMobile] = React.useState(false)
 
   React.useEffect(() => {
